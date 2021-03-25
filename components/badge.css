@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap");
+
+:root {
+  --presence-color: #3aa169;
+  --badge-border-color: #fff;
+  --border-color: #e5e5e5;
+}
+
+.badge-icon-container,
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-bottom: 0;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.badge-div {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.badge-icon {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 50%;
+  color: #111827;
+}
+
+.num-badge {
+  position: absolute;
+  background-color: #f16565;
+  color: white;
+  padding: 0.2rem;
+  border: 2px solid white;
+  border-radius: 60%;
+  font-family: Ubuntu;
+  font-size: 0.8rem;
+  font-weight: 600;
+  bottom: 2.8rem;
+  right: 1rem;
+}
+
+.cart-badge {
+  background-color: #f16565;
+  color: white;
+}
+
+.notif-badge {
+  background-color: #2a77f0;
+}
+
+/* avatar component */
+
+.avatar-comp {
+  position: relative;
+  margin: 1rem;
+}
+
+.avatar-badge {
+  position: absolute;
+  display: inline-block;
+  min-width: 1rem;
+  min-height: 1rem;
+  background-color: var(--presence-color);
+  border-radius: 50%;
+  border: 2px solid var(--badge-border-color);
+  bottom: 0.3rem;
+}
+
+.avatar-badge-large {
+  min-height: 1.8rem;
+  min-width: 1.8rem;
+  right: 1.8rem;
+}
+
+.avatar-badge-medium {
+  min-height: 1.3rem;
+  min-width: 1.3rem;
+  right: 2.8rem;
+}
+
+.avatar-badge-small {
+  right: 3.4rem;
+}
+
+.avatar-badge-ex-small {
+  min-height: 0.7rem;
+  min-width: 0.7em;
+  right: 3.9rem;
+}
+
+.avatar-display {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  /* justify-content: center; */
+}
+
+.img-utils {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* setting some attributes of code block */
+.language-markup {
+  max-height: 100px;
+}
+
+div.code-toolbar > .toolbar {
+  top: 1.5rem;
+  right: 1.5rem;
+}
