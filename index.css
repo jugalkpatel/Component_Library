@@ -94,9 +94,9 @@
 }
 
 .container {
-  /* display: grid; */
-  /* grid-template-columns: 1fr 4fr; */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex; */
   margin: 1rem 0;
 }
 
@@ -148,5 +148,13 @@
 }
 
 .component-container {
+  display: flex;
   margin: 2rem 0 0 2rem;
+  flex-direction: column;
+}
+
+.component-container__avatar {
+  max-width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
 }
