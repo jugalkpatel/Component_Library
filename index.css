@@ -94,9 +94,9 @@
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* display: flex; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
   margin: 1rem 0;
 }
 
@@ -143,14 +143,13 @@
   font-weight: 600;
 }
 
-.check-img {
-  width: 100%;
-}
+/* component container */
 
 .component-container {
   display: flex;
   margin: 2rem 0 0 2rem;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .component-container__avatar {

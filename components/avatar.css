@@ -14,7 +14,7 @@
 }
 
 .avatar-display {
-  display: flex;
+  /* display: flex; */
   /* justify-content: flex-start; */
   flex-wrap: wrap;
   align-items: center;
