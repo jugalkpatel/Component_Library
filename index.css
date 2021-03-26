@@ -19,6 +19,8 @@
   padding: 1rem;
 }
 
+/* navbar */
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -91,12 +93,14 @@
   }
 }
 
-.grid-container {
+.container {
   /* display: grid; */
   /* grid-template-columns: 1fr 4fr; */
   display: flex;
   margin: 1rem 0;
 }
+
+/* sidebar */
 
 .sidebar {
   width: fit-content;
@@ -120,9 +124,8 @@
   list-style-type: none;
 
   margin: 0;
-  margin-top: 2rem;
   padding: 0;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
 }
@@ -145,5 +148,5 @@
 }
 
 .component-container {
-  margin-top: 2rem;
+  margin: 2rem 0 0 2rem;
 }
