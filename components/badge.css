@@ -53,6 +53,11 @@
   background-color: #2a77f0;
 }
 
+.avatar-container .avatar-display {
+  display: flex;
+  align-items: center;
+}
+
 /* avatar component */
 
 .avatar-comp {
@@ -68,13 +73,14 @@
   background-color: var(--presence-color);
   border-radius: 50%;
   border: 2px solid var(--badge-border-color);
-  bottom: 0.3rem;
+  bottom: 0;
+  right: 0;
 }
 
 .avatar-badge-large {
   min-height: 1.8rem;
   min-width: 1.8rem;
-  right: 1.8rem;
+  bottom: 1rem;
 }
 
 .avatar-badge-medium {
@@ -93,7 +99,7 @@
   right: 3.9rem;
 }
 
-.avatar-display {
+.badge-icon-container .avatar-display {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -109,11 +115,11 @@
 }
 
 /* setting some attributes of code block */
-.language-markup {
+.badge-icon-container .language-markup {
   max-height: 100px;
 }
 
-div.code-toolbar > .toolbar {
+.badge-icon-container .code-toolbar .toolbar {
   top: 1.5rem;
   right: 1.5rem;
 }

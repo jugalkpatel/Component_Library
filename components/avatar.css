@@ -12,14 +12,16 @@
   /* border: 1px solid black; */
   flex-direction: column;
   width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
 }
 
 .avatar-display {
-  /* display: flex; */
+  display: flex;
   /* justify-content: flex-start; */
   flex-wrap: wrap;
   align-items: center;
-  border: 1px solid var(--border-color);
+
   padding: 1rem;
   border-bottom: 0;
 }
