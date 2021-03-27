@@ -2,34 +2,52 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --primary-color: #111827;
+  --secondary-color: white;
   --border-color: #e5e5e5;
 }
 .cards-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-items: space-evenly;
+  /* justify-content: space-evenly; */
 }
+
 .product-container {
   display: flex;
   flex-direction: column;
+
   max-width: 200px;
+
   font-family: Lato;
   font-weight: bolder;
+
   position: relative;
+
   margin: 0;
 }
 
 .wish-btn {
   display: inline-block;
+
+  align-self: flex-end;
+
   width: fit-content;
+
   padding: 0;
+
   background-color: transparent;
   border: 0;
   outline: 0;
-  align-self: flex-end;
+
   position: absolute;
   bottom: 6.8rem;
   right: 0.5rem;
@@ -41,11 +59,15 @@
 
 .close-btn {
   display: inline-block;
+
   width: fit-content;
+
   padding: 0;
+
   background-color: transparent;
   border: 0;
   outline: 0;
+
   position: absolute;
   top: 0.5rem;
   left: 0.2rem;
@@ -55,19 +77,21 @@
   stroke: #e84545;
 }
 
-.product-img {
-  width: 100%;
-}
 .product-info {
   text-decoration: none;
+
   color: var(--primary-color);
   font-size: 1.2rem;
+
   margin: 5px 0;
 }
 .primary-btn {
   background-color: #fff;
+
   border: 1.8px solid var(--primary-color);
+
   padding: 0.6rem;
+
   font-family: Lato;
   font-weight: 900;
 }
@@ -79,75 +103,109 @@
 
 .price-tag {
   display: block;
-  font-size: 1rem;
+
   margin: 3px 0;
+
+  font-size: 1rem;
+
   font-weight: normal;
 }
 
 .overlay-div {
   background: rgba(255, 255, 255, 0.5);
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 1rem;
+
   width: 100%;
   height: 100%;
+
   position: absolute;
 }
 
 .overlay-text {
   position: absolute;
+
   height: fit-content;
+
   color: var(--primary-color);
+
   top: 8rem;
 }
 
+/* text card */
+
 .text-card {
-  padding: 0.7rem;
-  border: 1px solid var(--primary-color);
-  border-radius: 0.3rem;
-  color: var(--primary-color);
-  max-width: 300px;
-  max-height: 140px;
   display: flex;
   flex-direction: column;
+
+  padding: 0.7rem;
+
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3rem;
+
+  color: var(--secondary-color);
+
+  max-width: 300px;
+  max-height: 140px;
+
+  background-color: var(--primary-color);
 }
 
 .text-card-title {
   font-family: Lato;
+
   margin: 0;
+
   padding: 0.5rem 0;
+
   border-bottom: 1px solid var(--primary-color);
 }
 
 .text-card-info {
   margin: 0.5rem 0;
+
   font-family: Lato;
 }
 
+/* horizontal card  */
+
 .horizontal-product-container {
   display: flex;
+
   font-family: Lato;
   font-weight: bolder;
+
   position: relative;
-  max-height: 200px;
-  margin: 0;
-  padding: 1rem;
+
+  height: 20rem;
+
+  width: 40rem;
+
+  padding: 2rem;
+  border: 1px solid var(--primary-color);
 }
 
 .hcard-product-info {
   display: block;
-  height: 100%;
+  /* height: 100%; */
+  width: 40%;
   margin: 0;
 }
 
 .second-horizontal-section {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  /* align-content: space-between; */
+  justify-content: space-between;
+  padding: 0 0 0 2rem;
   flex-shrink: 2;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-left: 0;
+  width: 60%;
 }
 
 .hcard-title {
@@ -175,6 +233,7 @@
 .hcard-product-desc {
   margin: 0.3rem 0;
   font-weight: 200;
+  font-size: 1rem;
 }
 
 .hcard-wish-btn {
@@ -183,4 +242,51 @@
   right: 2rem;
   bottom: 0;
   height: fit-content;
+}
+
+/* utility */
+
+.product-img {
+  width: 100%;
+}
+
+.distance-margin {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 620px) {
+  .distance-margin {
+    margin: 0.5rem;
+  }
+  /* horizontal card */
+  .horizontal-product-container {
+    margin: 0.5rem;
+    /* width: 25rem; */
+    width: 90%;
+    height: 11rem;
+    padding: 1rem;
+  }
+
+  .hcard-product-desc {
+    display: none;
+  }
+
+  .hcard-product-info {
+    width: 35%;
+  }
+
+  .horizontal-primary-btn {
+    width: 100%;
+    height: 30%;
+  }
+
+  .second-horizontal-section {
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+
+  .hcard-wish-btn {
+    top: 1rem;
+    right: 1rem;
+  }
 }

@@ -8,9 +8,10 @@
 
 .avatar {
   display: flex;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* border: 1px solid black; */
   flex-direction: column;
+  width: 100%;
 }
 
 .avatar-display {
