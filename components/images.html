@@ -5,30 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
+    <link rel="stylesheet" href="../resources/prism.css" />
+
     <link rel="stylesheet" href="./images.css" />
   </head>
   <body>
-    <!-- <div class="img-container">
-      <div class="img-container__responsive">
-        <img
-          class="responsive-img"
-          src="https://source.unsplash.com/random/"
-          alt="resposive_img"
-        />
-      </div>
-    </div> -->
-    <div class="container">
-      <img
-        class="responsive-img"
-        src="https://source.unsplash.com/random"
-        alt="round_img"
-      />
+    <div class="img-container">
+      <div class="img-container--border img-container--margin">
+        <div class="img-container__simple-img">
+          <img
+            class="responsive-img"
+            src="https://source.unsplash.com/random"
+            alt="round_img"
+          />
+        </div>
+        <pre>
+        <code class="language-markup">
+          &lt;div class=&quot;img-container__simple-img&quot;&gt;
+        &lt;img
+          class=&quot;responsive-img&quot;
+          src=&quot;https://source.unsplash.com/random&quot;
+          alt=&quot;round_img&quot;
+        /&gt;
+      &lt;/div&gt;
 
-      <img
-        class="responsive-img round"
-        src="https://source.unsplash.com/random"
-        alt="round_img"
-      />
+        </code>
+      </pre>
+      </div>
+      <div class="img-container--border img-container--margin">
+        <div class="img-container__round-img round">
+          <img
+            class="responsive-img img-round"
+            src="https://source.unsplash.com/random"
+            alt="round_img"
+          />
+        </div>
+        <pre>
+      <code class="language-markup">
+        &lt;div class=&quot;img-container__round-img round&quot;&gt;
+      &lt;img
+        class=&quot;responsive-img img-round&quot;
+        src=&quot;https://source.unsplash.com/random&quot;
+        alt=&quot;round_img&quot;
+      /&gt;
+    &lt;/div&gt;
+      </code>
+    </pre>
+      </div>
     </div>
+    <script src="../resources/prism.js"></script>
   </body>
 </html>

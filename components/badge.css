@@ -115,11 +115,12 @@
 }
 
 /* setting some attributes of code block */
-.badge-icon-container .language-markup {
+/* .badge-icon-container .language-markup {
   max-height: 100px;
-}
+} */
 
-.badge-icon-container .code-toolbar .toolbar {
+/* left to fix */
+/* .badge-icon-container .code-toolbar .toolbar {
   top: 1.5rem;
   right: 1.5rem;
-}
+} */

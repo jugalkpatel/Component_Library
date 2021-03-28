@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./resources/prism.css" />
-
-    <link rel="stylesheet" href="./components/avatar.css" />
-    <link rel="stylesheet" href="./components/badge.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -87,7 +83,7 @@
             <a href="#" class="sidebar__item">Button</a>
             <a href="#badge" class="sidebar__item">Badge</a>
             <a href="#" class="sidebar__item">Card</a>
-            <a href="#" class="sidebar__item">Image</a>
+            <a href="#image" class="sidebar__item">Image</a>
             <a href="#" class="sidebar__item">Input</a>
             <a href="#" class="sidebar__item">Lists</a>
             <a href="#" class="sidebar__item">Modal</a>
@@ -412,6 +408,55 @@
       </pre>
           </div>
           <!-- end of the badge-container -->
+
+          <h1 id="image" class="component__image__title component--mod">
+            Image
+          </h1>
+
+          <div class="img-container">
+            <div class="img-container--border img-container--margin">
+              <div class="img-container__simple-img">
+                <img
+                  class="responsive-img"
+                  src="https://source.unsplash.com/random"
+                  alt="round_img"
+                />
+              </div>
+              <pre>
+        <code class="language-markup">
+          &lt;div class=&quot;img-container__simple-img&quot;&gt;
+        &lt;img
+          class=&quot;responsive-img&quot;
+          src=&quot;https://source.unsplash.com/random&quot;
+          alt=&quot;round_img&quot;
+        /&gt;
+      &lt;/div&gt;
+
+        </code>
+      </pre>
+            </div>
+            <div class="img-container--border img-container--margin">
+              <div class="img-container__round-img round">
+                <img
+                  class="responsive-img img-round"
+                  src="https://source.unsplash.com/random"
+                  alt="round_img"
+                />
+              </div>
+              <pre>
+      <code class="language-markup">
+        &lt;div class=&quot;img-container__round-img round&quot;&gt;
+      &lt;img
+        class=&quot;responsive-img img-round&quot;
+        src=&quot;https://source.unsplash.com/random&quot;
+        alt=&quot;round_img&quot;
+      /&gt;
+    &lt;/div&gt;
+      </code>
+    </pre>
+            </div>
+          </div>
+          <!-- end of the image-container -->
         </div>
         <!-- end of the component-container-->
       </div>
