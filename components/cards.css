@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
 * {
   box-sizing: border-box;
 }
@@ -12,14 +14,15 @@ body {
   --secondary-color: white;
   --border-color: #e5e5e5;
   --primary-font: Lato;
-  --star-color: ;
+  --wish-svg-stroke: #f16565;
+  --close-svg-stroke: #e84545;
 }
 .cards-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  justify-items: space-evenly;
+  /* align-items: center; */
+  width: 100%;
   /* justify-content: space-evenly; */
 }
 
@@ -27,14 +30,16 @@ body {
   display: flex;
   flex-direction: column;
 
-  max-width: 200px;
+  max-width: 13rem;
 
   font-family: Lato;
   font-weight: bolder;
 
   position: relative;
 
-  margin: 0;
+  margin: auto; /* remove this while giving to user */
+
+  /* padding: 1rem; */
 }
 
 .wish-btn {
@@ -56,7 +61,7 @@ body {
 }
 
 .heart-svg:hover {
-  stroke: #f16565;
+  stroke: var(--wish-svg-stroke);
 }
 
 .close-btn {
@@ -76,7 +81,7 @@ body {
 }
 
 .svg-close:hover {
-  stroke: #e84545;
+  stroke: var(--close-svg-stroke);
 }
 
 .product-info {
@@ -146,15 +151,15 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 0.7rem;
+  padding: 1rem;
 
   border: 1px solid var(--primary-color);
   border-radius: 0.3rem;
 
   color: var(--secondary-color);
 
-  max-width: 300px;
-  max-height: 140px;
+  max-width: 20rem;
+  /* max-height: 9rem; */
 
   background-color: var(--primary-color);
 }
@@ -334,6 +339,15 @@ body {
   font-family: var(--primary-font);
 }
 
+/* .align-center {
+  /* text-align: center; */
+
+/* .cards-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+} */
+
 /* media queries */
 
 @media screen and (max-width: 620px) {
@@ -370,5 +384,18 @@ body {
   .hcard-wish-btn {
     top: 1rem;
     right: 1rem;
+  }
+
+  .primary-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  .heart-svg {
+    stroke: var(--wish-svg-stroke);
+  }
+
+  .svg-close {
+    stroke: var(--close-svg-stroke);
   }
 }

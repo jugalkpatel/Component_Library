@@ -1,0 +1,1 @@
+- remove margin: auto in product-container in cards css.
