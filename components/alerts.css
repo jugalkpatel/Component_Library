@@ -10,7 +10,9 @@
   --success-alert-fontcolor: #3bb54a;
   --error-alert-backcolor: #fdd7d7;
   --error-alert-fontcolor: #d1403f;
-  --alert-font-size: 1.5rem;
+  --warning-alert-backcolor: #feebc8;
+  --warning-alert-fontcolor: #f0c419;
+  --alert-font-size: 1.3rem;
   --alert-icon-margin-right: 1rem;
   --alert-padding: 1rem;
 }
@@ -40,4 +42,9 @@
 .alerts__error {
   background-color: var(--error-alert-backcolor);
   color: var(--error-alert-fontcolor);
+}
+
+.alerts__warning {
+  background-color: var(--warning-alert-backcolor);
+  color: var(--warning-alert-fontcolor);
 }
