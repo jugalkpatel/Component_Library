@@ -8,7 +8,9 @@
   --primary-font: Lato;
   --success-alert-backcolor: #c6f4d5;
   --success-alert-fontcolor: #3bb54a;
-  --alert-font-size: 1.4rem;
+  --error-alert-backcolor: #fdd7d7;
+  --error-alert-fontcolor: #d1403f;
+  --alert-font-size: 1.5rem;
   --alert-icon-margin-right: 1rem;
   --alert-padding: 1rem;
 }
@@ -17,19 +19,25 @@
   width: 100%;
 }
 
-.alerts__success {
+.alerts--common {
   display: flex;
-
+  align-items: center;
   padding: var(--alert-padding);
 
   font-size: var(--alert-font-size);
   font-family: var(--primary-font);
+}
 
+.alerts--margin--common {
+  margin-right: var(--alert-icon-margin-right);
+}
+
+.alerts__success {
   background-color: var(--success-alert-backcolor);
   color: var(--success-alert-fontcolor);
 }
 
-.alerts__success__svg {
-  display: inline-block;
-  margin-right: var(--alert-icon-margin-right);
+.alerts__error {
+  background-color: var(--error-alert-backcolor);
+  color: var(--error-alert-fontcolor);
 }
