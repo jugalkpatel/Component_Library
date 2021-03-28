@@ -37,8 +37,6 @@ body {
 
   position: relative;
 
-  margin: auto; /* remove this while giving to user */
-
   /* padding: 1rem; */
 }
 
@@ -208,11 +206,11 @@ body {
 .second-horizontal-section {
   display: flex;
   flex-direction: column;
-  /* align-content: space-between; */
   justify-content: space-between;
+
   padding: 0 0 0 2rem;
   flex-shrink: 2;
-  /* border: 1px solid black; */
+
   border-left: 0;
   width: 60%;
 }
@@ -236,12 +234,15 @@ body {
 
 .horizontal-primary-btn {
   display: inline-block;
+
   font-size: 0.7rem;
+
   width: 10rem;
 }
 
 .hcard-product-desc {
   margin: 0.3rem 0;
+
   font-weight: 200;
   font-size: 1rem;
 }
@@ -251,6 +252,7 @@ body {
   top: 2rem;
   right: 2rem;
   bottom: 0;
+
   height: fit-content;
 }
 
@@ -259,15 +261,17 @@ body {
 .shadow_card {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
-  /* padding: 1rem; */
+
   height: 30rem;
+
   border-radius: 1rem;
   /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12); */
+
   width: 20rem;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -286,10 +290,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   background-color: var(--secondary-color);
   color: var(--primary-color);
+
   padding: 1rem;
+
   height: 50%;
+
   position: relative;
 }
 
@@ -301,6 +309,7 @@ body {
 
 .shadow_card__product-rating__title {
   display: block;
+
   font-weight: 700;
 }
 
@@ -339,15 +348,6 @@ body {
   font-family: var(--primary-font);
 }
 
-/* .align-center {
-  /* text-align: center; */
-
-/* .cards-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-} */
-
 /* media queries */
 
 @media screen and (max-width: 620px) {
@@ -357,9 +357,11 @@ body {
   /* horizontal card */
   .horizontal-product-container {
     margin: 0.5rem;
-    /* width: 25rem; */
+
     width: 90%;
+
     height: 11rem;
+
     padding: 1rem;
   }
 
