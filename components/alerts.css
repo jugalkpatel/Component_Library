@@ -12,6 +12,8 @@
   --error-alert-fontcolor: #d1403f;
   --warning-alert-backcolor: #feebc8;
   --warning-alert-fontcolor: #f0c419;
+  --info-alert-backcolor: #bee3f8;
+  --info-alert-fontcolor: #447eae;
   --alert-font-size: 1.3rem;
   --alert-icon-margin-right: 1rem;
   --alert-padding: 1rem;
@@ -47,4 +49,9 @@
 .alerts__warning {
   background-color: var(--warning-alert-backcolor);
   color: var(--warning-alert-fontcolor);
+}
+
+.alerts__info {
+  background-color: var(--info-alert-backcolor);
+  color: var(--info-alert-fontcolor);
 }
