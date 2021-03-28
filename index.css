@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("./resources/prism.css");
+@import url("./components/utils.css");
 @import url("./components/images.css");
 @import url("./components/avatar.css");
 @import url("./components/badge.css");
 @import url("./components/cards.css");
 @import url("./components/alerts.css");
-@import url("./components/utils.css");
+@import url("./components/navbar.css");
 * {
   box-sizing: border-box;
   margin: 0;

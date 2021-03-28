@@ -46,9 +46,6 @@ body {
 }
 
 @media screen and (min-width: 920px) {
-  .img-container {
-    height: 50%;
-  }
   .img-container__simple-img,
   .img-container__round-img {
     width: 40%;
@@ -57,9 +54,6 @@ body {
 }
 
 @media screen and (min-width: 576px) and (max-width: 920px) {
-  .img-container {
-    height: 50%;
-  }
   .img-container__simple-img,
   .img-container__round-img {
     width: 60%;

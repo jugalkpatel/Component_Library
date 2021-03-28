@@ -190,7 +190,7 @@ body {
 
   height: 20rem;
 
-  width: 40rem;
+  width: 80%;
 
   padding: 2rem;
   border: 1px solid var(--primary-color);
@@ -350,7 +350,7 @@ body {
 
 /* media queries */
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 780px) {
   .distance-margin {
     margin: 0.5rem;
   }
