@@ -219,6 +219,6 @@ div.code-toolbar {
 
 @media screen and (max-width: 576px) {
   div.code-toolbar > .toolbar {
-    right: 1.5rem;
+    right: 0.5rem;
   }
 }
