@@ -4,9 +4,11 @@
 @import url("./components/images.css");
 @import url("./components/avatar.css");
 @import url("./components/badge.css");
+@import url("./components/button.css");
 @import url("./components/cards.css");
 @import url("./components/alerts.css");
 @import url("./components/navbar.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
