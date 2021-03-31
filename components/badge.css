@@ -4,6 +4,12 @@
   --presence-color: #3aa169;
   --badge-border-color: #fff;
   --border-color: #e5e5e5;
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --border-color: #e5e5e5;
+  --badge-color-pink: #f16565;
+  --secondary-color: #fff;
+  --badge-color-blue: #2a77f0;
 }
 
 .badge-icon-container,
@@ -27,17 +33,17 @@
   display: inline-block;
   padding: 2rem;
   border-radius: 50%;
-  color: #111827;
+  color: var(--primary-color);
 }
 
 .num-badge {
   position: absolute;
-  background-color: #f16565;
-  color: white;
+  background-color: var(--badge-color-pink);
+  color: var(--secondary-color);
   padding: 0.2rem;
-  border: 2px solid white;
+  border: 2px solid var(--secondary-color);
   border-radius: 60%;
-  font-family: Ubuntu;
+  font-family: var(--primary-font);
   font-size: 0.8rem;
   font-weight: 600;
   bottom: 2.8rem;
@@ -45,12 +51,12 @@
 }
 
 .cart-badge {
-  background-color: #f16565;
-  color: white;
+  background-color: var(--badge-color-pink);
+  color: var(--secondary-color);
 }
 
 .notif-badge {
-  background-color: #2a77f0;
+  background-color: var(--badge-color-blue);
 }
 
 .avatar-container .avatar-display {
