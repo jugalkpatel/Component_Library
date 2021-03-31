@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-font: Lato;
+  --font-weight: 600;
+  --primary-color: #111827;
+  --secondary-color: #fff;
+  --border-color: #e5e5e5;
+  --button-radius: 0.3rem;
+  --twitter-color: #1da1f2;
+  --facebook-color: #385898;
+  --github-color: #24292e;
+  --button-margin: 0.5rem;
+  --button-padding: 0.6rem;
+  --button-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --success-alert-backcolor: #c6f4d5;
+  --success-alert-fontcolor: #3bb54a;
+  --error-alert-backcolor: #fdd7d7;
+  --error-alert-fontcolor: #d1403f;
+  --warning-alert-backcolor: #feebc8;
+  --warning-alert-fontcolor: #f0c419;
+  --info-alert-backcolor: #bee3f8;
+  --info-alert-fontcolor: #447eae;
+  --alert-font-size: 1.3rem;
+  --alert-icon-margin-right: 1rem;
+  --alert-padding: 1rem;
+  --presence-color: #3aa169;
+  --badge-border-color: #fff;
+  --wish-svg-stroke: #f16565;
+  --close-svg-stroke: #e84545;
+}
+
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/utils.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/avatar.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/alerts.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/badge.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/button.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/cards.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/images.css");
+@import url("https://raw.githubusercontent.com/jugalkpatel/Component_Library/development/components/navbar.css");
