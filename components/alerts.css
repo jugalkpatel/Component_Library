@@ -59,6 +59,10 @@
   color: var(--info-alert-fontcolor);
 }
 
+.alerts .language-markup {
+  height: 10rem;
+}
+
 @media screen and (max-width: 620px) {
   .alerts--common {
     margin: 0 1rem 0 1rem;
@@ -69,8 +73,4 @@
   .alert--reduce-width {
     width: 50%;
   }
-}
-
-.alerts .language-markup {
-  height: 10rem;
 }
