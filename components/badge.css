@@ -114,13 +114,11 @@
   border-radius: 50%;
 }
 
-/* setting some attributes of code block */
-/* .badge-icon-container .language-markup {
-  max-height: 100px;
-} */
+/* fix overflow of the code block */
+.badge-icon-container .language-markup {
+  height: 10rem;
+}
 
-/* left to fix */
-/* .badge-icon-container .code-toolbar .toolbar {
-  top: 1.5rem;
-  right: 1.5rem;
-} */
+.avatar-container .language-markup {
+  height: 10rem;
+}

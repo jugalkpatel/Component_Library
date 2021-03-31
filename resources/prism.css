@@ -213,12 +213,8 @@ div.code-toolbar {
   margin-top: 1rem;
 }
 
-.language-markup {
-  height: 10rem;
-}
-
 @media screen and (max-width: 576px) {
   div.code-toolbar > .toolbar {
-    right: 0.5rem;
+    right: 1.1rem;
   }
 }

@@ -80,6 +80,11 @@ body {
   cursor: pointer;
 }
 
+/* fix overflow the codeblock */
+.navbar-container .language-markup {
+  height: 10rem;
+}
+
 @media screen and (min-width: 576px) {
   .navbar-component {
     padding: 0 2rem 0 2rem;

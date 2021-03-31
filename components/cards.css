@@ -349,6 +349,11 @@ body {
   font-family: var(--primary-font);
 }
 
+/* fix overflow of the code block */
+.cards-container .language-markup {
+  height: 10rem;
+}
+
 /* media queries */
 
 @media screen and (max-width: 780px) {
