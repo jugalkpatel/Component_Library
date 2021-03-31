@@ -32,7 +32,7 @@ body {
 
   max-width: 13rem;
 
-  font-family: Lato;
+  font-family: var(--primary-font);
   font-weight: bolder;
 
   position: relative;
@@ -91,21 +91,22 @@ body {
   margin: 5px 0;
 }
 .primary-btn {
-  background-color: #fff;
+  background-color: var(--secondary-color);
 
   border: 1.8px solid var(--primary-color);
 
   padding: 0.6rem;
 
-  font-family: Lato;
+  font-family: var(--primary-font);
   font-weight: 900;
 
-  outline: none;
+  border-radius: 0.3rem;
+  outline: var(--primary-color);
 }
 
 .primary-btn:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .price-tag {
@@ -163,7 +164,7 @@ body {
 }
 
 .text-card-title {
-  font-family: Lato;
+  font-family: var(--primary-font);
 
   margin: 0;
 
@@ -175,7 +176,7 @@ body {
 .text-card-info {
   margin: 0.5rem 0;
 
-  font-family: Lato;
+  font-family: var(--primary-font);
 }
 
 /* horizontal card  */
@@ -183,7 +184,7 @@ body {
 .horizontal-product-container {
   display: flex;
 
-  font-family: Lato;
+  font-family: var(--primary-font);
   font-weight: bolder;
 
   position: relative;
