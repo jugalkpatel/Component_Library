@@ -127,6 +127,26 @@ body {
   margin: var(--button-margin);
 }
 
+/* floating button */
+.floating__button {
+  outline: var(--primary-color);
+
+  background-color: var(--primary-color);
+
+  border: 0;
+
+  padding: var(--button-padding);
+
+  display: flex;
+  justify-content: center;
+
+  box-shadow: var(--button-shadow);
+
+  margin: var(--button-margin);
+
+  border-radius: 50%;
+}
+
 /* utilities for twitter, facebook and github buttons */
 .twitter--btn {
   background-color: var(--twitter-color);
