@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --border-color: #e5e5e5;
+}
+
+.input {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.input__primary {
+}

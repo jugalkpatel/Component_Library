@@ -136,7 +136,7 @@ div.code-toolbar {
 div.code-toolbar > .toolbar {
   position: absolute;
   top: 0.5rem;
-  right: 1.2rem;
+  right: 1.5rem;
   transition: opacity 0.3s ease-in-out;
   /* opacity: 0; */
   background-color: red;

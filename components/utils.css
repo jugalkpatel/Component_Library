@@ -10,16 +10,6 @@
   margin-bottom: 1rem;
 }
 
-/* .container--border {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-/* .center--margin {
-  display: flex;
-  justify-content: center;
-} */
-
 .flex--container {
   display: flex;
   align-items: center;

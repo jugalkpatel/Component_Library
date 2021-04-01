@@ -8,8 +8,6 @@
 
 .avatar {
   display: flex;
-  /* padding: 1rem; */
-  /* border: 1px solid black; */
   flex-direction: column;
   width: 100%;
   border: 1px solid var(--border-color);
@@ -52,15 +50,3 @@
   width: 100%;
   border-radius: 50%;
 }
-
-/* .img-distance {
-}
-
-.justify-center {
-}
-
-.img-responsive {
-}
-
-.is-round {
-} */
