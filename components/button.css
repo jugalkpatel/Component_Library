@@ -101,6 +101,8 @@ body {
 
   max-width: max-content;
 
+  height: max-content;
+
   box-shadow: var(--button-shadow);
 }
 
