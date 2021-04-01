@@ -20,6 +20,7 @@ body {
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   --small-text: 0.7rem;
   --small-text-color: #878787;
+  --zindex-one: 1;
 }
 
 /* utility */
@@ -116,6 +117,8 @@ body {
   font-size: 1.2rem;
 
   margin: 5px 0;
+
+  position: relative;
 }
 
 .product-info__img {
@@ -154,7 +157,10 @@ body {
 }
 
 .product-info__wish-btn {
-  bottom: 8rem;
+  bottom: 7rem;
+  right: 0.3rem;
+  z-index: var(--zindex-one);
+  cursor: pointer;
 }
 
 .primary-btn {
@@ -181,7 +187,7 @@ body {
 
   margin: 3px 0;
 
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 
   font-weight: 900;
 }
@@ -280,7 +286,7 @@ body {
 .second-horizontal-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   padding: 0 0 0 2rem;
   flex-shrink: 2;

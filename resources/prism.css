@@ -40,6 +40,7 @@ pre[class*="language-"] {
   /* margin: .5em 0; */
   overflow-y: scroll;
   overflow-x: hidden;
+  /* scrollbar-width: thin; */
 }
 
 :not(pre) > code[class*="language-"],
@@ -211,6 +212,10 @@ pre {
 
 div.code-toolbar {
   margin-top: 1rem;
+}
+
+.language-markup {
+  scrollbar-width: thin;
 }
 
 @media screen and (max-width: 576px) {

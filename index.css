@@ -12,6 +12,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  scrollbar-width: thin;
 }
 
 :root {

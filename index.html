@@ -81,7 +81,7 @@
             <a href="#avatar" class="sidebar__item">Avatar</a>
             <a href="#alerts" class="sidebar__item">Alert</a>
             <a href="#badge" class="sidebar__item">Badge</a>
-            <a href="#" class="sidebar__item">Button</a>
+            <a href="#buttons" class="sidebar__item">Buttons</a>
             <a href="#cards" class="sidebar__item">Cards</a>
             <a href="#image" class="sidebar__item">Image</a>
             <a href="#" class="sidebar__item">Input</a>
@@ -1484,71 +1484,92 @@
                     </svg>
                     4.5
                   </span>
-                  <span class="price-tag">₹2500</span></a
-                >
-                <button class="wish-btn product-info__wish-btn">
-                  <svg
-                    class="heart-svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#B9B9B9"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                    ></path>
-                  </svg>
-                </button>
+                  <span class="price-tag">₹ 2500</span>
+                  <button class="wish-btn product-info__wish-btn">
+                    <svg
+                      class="heart-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#B9B9B9"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
+                    </svg>
+                  </button>
+                </a>
               </div>
               <!-- end of the product container -->
 
               <pre>
-        <code class="language-markup">
-          &lt;a href=&quot;#&quot; class=&quot;badge-icon&quot;&gt;
-          &lt;svg
-            height=&quot;24&quot;
-            viewBox=&quot;0 0 24 24&quot;
-            width=&quot;24&quot;
-            xmlns=&quot;http://www.w3.org/2000/svg&quot;
-          &gt;
-            &lt;circle
-              cx=&quot;8&quot;
-              cy=&quot;21&quot;
-              fill=&quot;none&quot;
-              r=&quot;2&quot;
-              stroke=&quot;#000&quot;
-              stroke-linecap=&quot;round&quot;
-              stroke-linejoin=&quot;round&quot;
-              stroke-width=&quot;2&quot;
-            /&gt;
-            &lt;circle
-              cx=&quot;20&quot;
-              cy=&quot;21&quot;
-              fill=&quot;none&quot;
-              r=&quot;2&quot;
-              stroke=&quot;#000&quot;
-              stroke-linecap=&quot;round&quot;
-              stroke-linejoin=&quot;round&quot;
-              stroke-width=&quot;2&quot;
-            /&gt;
-            &lt;path
-              d=&quot;M5.67,6H23l-1.68,8.39a2,2,0,0,1-2,1.61H8.75a2,2,0,0,1-2-1.74L5.23,2.74A2,2,0,0,0,3.25,1H1&quot;
-              fill=&quot;none&quot;
-              stroke=&quot;#000&quot;
-              stroke-linecap=&quot;round&quot;
-              stroke-linejoin=&quot;round&quot;
-              stroke-width=&quot;2&quot;
-            /&gt;
-          &lt;/svg&gt;
-          &lt;span class=&quot;num-badge cart-badge&quot;&gt;10&lt;/span&gt;
-        &lt;/a&gt;
-        </code>
-      </pre>
+                <code class="language-markup">
+                  &lt;a href=&quot;#&quot; class=&quot;product-info&quot;&gt;
+                  &lt;img
+                    class=&quot;product-img product-info__img&quot;
+                    src=&quot;https://unsplash.it/200/300&quot;
+                    alt=&quot;product&quot;
+                  /&gt;Lorem ipsum
+                  &lt;span class=&quot;product-info__small&quot;
+                    &gt;Lorem ipsum dolor sit Lorem&lt;/span
+                  &gt;
+                  &lt;span class=&quot;product-info__rating&quot;&gt;
+                    &lt;?xml version=&quot;1.0&quot;?&gt;
+                    &lt;svg
+                      xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+                      xmlns:svgjs=&quot;http://svgjs.com/svgjs&quot;
+                      version=&quot;1.1&quot;
+                      width=&quot;14&quot;
+                      height=&quot;14&quot;
+                      x=&quot;0&quot;
+                      y=&quot;0&quot;
+                      viewBox=&quot;0 0 511.98685 511&quot;
+                      style=&quot;enable-background: new 0 0 512 512&quot;
+                      xml:space=&quot;preserve&quot;
+                      class=&quot;svg__rating&quot;
+                    &gt;
+                      &lt;g&gt;
+                        &lt;path
+                          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                          d=&quot;m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0&quot;
+                          fill=&quot;#ffffff&quot;
+                          data-original=&quot;#ffc107&quot;
+                          style=&quot;&quot;
+                        /&gt;
+                      &lt;/g&gt;
+                    &lt;/svg&gt;
+                    4.5
+                  &lt;/span&gt;
+                  &lt;span class=&quot;price-tag&quot;&gt;₹2500&lt;/span&gt;&lt;/a
+                &gt;
+                &lt;button class=&quot;wish-btn product-info__wish-btn&quot;&gt;
+                  &lt;svg
+                    class=&quot;heart-svg&quot;
+                    xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                    width=&quot;24&quot;
+                    height=&quot;24&quot;
+                    viewBox=&quot;0 0 24 24&quot;
+                    fill=&quot;none&quot;
+                    stroke=&quot;#B9B9B9&quot;
+                    stroke-width=&quot;2&quot;
+                    stroke-linecap=&quot;round&quot;
+                    stroke-linejoin=&quot;round&quot;
+                  &gt;
+                    &lt;path
+                      d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 
+                      0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 
+                      0 0-7.78z&quot;
+                    &gt;&lt;/path&gt;
+                  &lt;/svg&gt;
+                &lt;/button&gt;
+                </code>
+              </pre>
             </div>
             <!-- end of the product container with margin and border -->
             <div
@@ -1641,7 +1662,9 @@
               stroke-linejoin=&quot;round&quot;
             &gt;
               &lt;path
-                d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z&quot;
+                d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 
+                5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 
+                5.5 0 0 0 0-7.78z&quot;
               &gt;&lt;/path&gt;
             &lt;/svg&gt;
           &lt;/button&gt;
@@ -1727,7 +1750,9 @@
               stroke-linejoin=&quot;round&quot;
             &gt;
               &lt;path
-                d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z&quot;
+                d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.
+                06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.
+                78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z&quot;
               &gt;&lt;/path&gt;
             &lt;/svg&gt;
           &lt;/button&gt;
@@ -1795,7 +1820,7 @@
                 /></a>
                 <div class="second-horizontal-section">
                   <div class="hsection_info">
-                    <h4 class="hcard-title">Lorem ipsum</h4>
+                    <h3 class="hcard-title">Lorem ipsum</h3>
                     <small class="hcard-title-desc"
                       >Lorem ipsum dolor sit amet.</small
                     >
@@ -1869,7 +1894,9 @@
                 stroke-linejoin=&quot;round&quot;
               &gt;
                 &lt;path
-                  d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z&quot;
+                  d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 
+                  0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 
+                  7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z&quot;
                 &gt;&lt;/path&gt;
               &lt;/svg&gt;
             &lt;/button&gt;
@@ -1978,7 +2005,9 @@
                       stroke-linejoin="round"
                     >
                       <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 
+                        0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 
+                        7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
                       ></path>
                     </svg>
                   </button>
@@ -2013,7 +2042,17 @@
                 xmlns=&quot;http://www.w3.org/2000/svg&quot;
               &gt;
                 &lt;path
-                  d=&quot;m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0&quot;
+                  d=&quot;m510.652344 185.902344c-3.351563-10.367188-12.546875-17.
+                  730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.
+                  769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.
+                  714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.
+                  417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 
+                  10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 
+                  145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 
+                  3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.
+                  882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 
+                  29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 
+                  111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0&quot;
                   fill=&quot;#ffc107&quot;
                 /&gt;
               &lt;/svg&gt;
@@ -2204,72 +2243,72 @@
                 </div>
               </nav>
               <pre>
-          <code class="language-markup">
-              &lt;nav class=&quot;navbar-component&quot;&gt;
-        &lt;div class=&quot;navbar-component__menu&quot;&gt;
-          &lt;button class=&quot;navbar-component__menu__btn&quot;&gt;
-            &lt;svg
-              xmlns=&quot;http://www.w3.org/2000/svg&quot;
-              width=&quot;24&quot;
-              height=&quot;24&quot;
-              viewBox=&quot;0 0 24 24&quot;
-              fill=&quot;none&quot;
-              stroke=&quot;#111827&quot;
-              stroke-width=&quot;2&quot;
-              stroke-linecap=&quot;round&quot;
-              stroke-linejoin=&quot;round&quot;
-              class=&quot;feather feather-menu&quot;
-            &gt;
-              &lt;line x1=&quot;3&quot; y1=&quot;12&quot; x2=&quot;21&quot; y2=&quot;12&quot;&gt;&lt;/line&gt;
-              &lt;line x1=&quot;3&quot; y1=&quot;6&quot; x2=&quot;21&quot; y2=&quot;6&quot;&gt;&lt;/line&gt;
-              &lt;line x1=&quot;3&quot; y1=&quot;18&quot; x2=&quot;21&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
-            &lt;/svg&gt;
-          &lt;/button&gt;
-          &lt;div class=&quot;navbar-component__menu_social&quot;&gt;
-            &lt;a href=&quot;#&quot; class=&quot;navbar-component__menu__social__github&quot;&gt;
-              &lt;svg
-                xmlns=&quot;http://www.w3.org/2000/svg&quot;
-                width=&quot;24&quot;
-                height=&quot;24&quot;
-                viewBox=&quot;0 0 24 24&quot;
-                fill=&quot;none&quot;
-                stroke=&quot;currentColor&quot;
-                stroke-width=&quot;2&quot;
-                stroke-linecap=&quot;round&quot;
-                stroke-linejoin=&quot;round&quot;
-                class=&quot;feather feather-github&quot;
-              &gt;
-                &lt;path
-                  d=&quot;M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22&quot;
-                &gt;&lt;/path&gt;
-              &lt;/svg&gt;
-            &lt;/a&gt;
-            &lt;a href=&quot;#&quot; class=&quot;navbar-component__menu__social__twitter&quot;&gt;
-              &lt;svg
-                xmlns=&quot;http://www.w3.org/2000/svg&quot;
-                width=&quot;24&quot;
-                height=&quot;24&quot;
-                viewBox=&quot;0 0 24 24&quot;
-                fill=&quot;none&quot;
-                stroke=&quot;#1DA1F2&quot;
-                stroke-width=&quot;2&quot;
-                stroke-linecap=&quot;round&quot;
-                stroke-linejoin=&quot;round&quot;
-                class=&quot;feather feather-twitter&quot;
-              &gt;
-                &lt;path
-                  d=&quot;M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z&quot;
-                &gt;&lt;/path&gt;
-              &lt;/svg&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;navbar-component__title&quot;&gt;
-          &lt;span class=&quot;navbar-component__title__text&quot;&gt;UNDEFINED&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/nav&gt;
-          </code>
-      </pre>
+                <code class="language-markup">
+                  &lt;nav class=&quot;navbar-component&quot;&gt;
+                  &lt;div class=&quot;navbar-component__menu&quot;&gt;
+                    &lt;button class=&quot;navbar-component__menu__btn&quot;&gt;
+                      &lt;svg
+                        xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                        width=&quot;24&quot;
+                        height=&quot;24&quot;
+                        viewBox=&quot;0 0 24 24&quot;
+                        fill=&quot;none&quot;
+                        stroke=&quot;#111827&quot;
+                        stroke-width=&quot;2&quot;
+                        stroke-linecap=&quot;round&quot;
+                        stroke-linejoin=&quot;round&quot;
+                        class=&quot;feather feather-menu&quot;
+                      &gt;
+                        &lt;line x1=&quot;3&quot; y1=&quot;12&quot; x2=&quot;21&quot; y2=&quot;12&quot;&gt;&lt;/line&gt;
+                        &lt;line x1=&quot;3&quot; y1=&quot;6&quot; x2=&quot;21&quot; y2=&quot;6&quot;&gt;&lt;/line&gt;
+                        &lt;line x1=&quot;3&quot; y1=&quot;18&quot; x2=&quot;21&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+                      &lt;/svg&gt;
+                    &lt;/button&gt;
+                    &lt;div class=&quot;navbar-component__menu_social&quot;&gt;
+                      &lt;a href=&quot;#&quot; class=&quot;navbar-component__menu__social__github&quot;&gt;
+                        &lt;svg
+                          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                          width=&quot;24&quot;
+                          height=&quot;24&quot;
+                          viewBox=&quot;0 0 24 24&quot;
+                          fill=&quot;none&quot;
+                          stroke=&quot;currentColor&quot;
+                          stroke-width=&quot;2&quot;
+                          stroke-linecap=&quot;round&quot;
+                          stroke-linejoin=&quot;round&quot;
+                          class=&quot;feather feather-github&quot;
+                        &gt;
+                          &lt;path
+                            d=&quot;M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22&quot;
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/a&gt;
+                      &lt;a href=&quot;#&quot; class=&quot;navbar-component__menu__social__twitter&quot;&gt;
+                        &lt;svg
+                          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                          width=&quot;24&quot;
+                          height=&quot;24&quot;
+                          viewBox=&quot;0 0 24 24&quot;
+                          fill=&quot;none&quot;
+                          stroke=&quot;#1DA1F2&quot;
+                          stroke-width=&quot;2&quot;
+                          stroke-linecap=&quot;round&quot;
+                          stroke-linejoin=&quot;round&quot;
+                          class=&quot;feather feather-twitter&quot;
+                        &gt;
+                          &lt;path
+                            d=&quot;M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z&quot;
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;navbar-component__title&quot;&gt;
+                    &lt;span class=&quot;navbar-component__title__text&quot;&gt;UNDEFINED&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/nav&gt;
+                </code>
+              </pre>
             </div>
           </div>
           <!-- end of the navbar container-->
