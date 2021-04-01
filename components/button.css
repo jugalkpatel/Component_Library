@@ -116,17 +116,23 @@ body {
 
   /* border: 1px solid var(--primary-color); */
 
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 
   border: 0;
+
+  color: white;
+
+  box-shadow: var(--button-shadow);
 
   /* color: var(--secondary-color); */
 
   padding: var(--button-padding);
 
-  box-shadow: var(--button-shadow);
-
   margin: var(--button-margin);
+
+  border-radius: 0.3rem;
+
+  cursor: pointer;
 }
 
 /* floating button */
@@ -147,6 +153,8 @@ body {
   margin: var(--button-margin);
 
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 /* utilities for twitter, facebook and github buttons */
@@ -172,13 +180,17 @@ body {
 }
 
 /* fix overflow for code block */
-.button__container .language-markup {
+/* .button__container .language-markup {
   overflow-x: scroll;
   overflow-y: hidden;
-}
+} */
 
 .button__container .toolbar {
   right: 1rem;
+}
+
+.btn-codeblock--height {
+  height: 10rem;
 }
 
 @media screen and (min-width: 576px) {
@@ -188,8 +200,12 @@ body {
   }
 
   /* codeblock overflow fix for desktop and tablets */
-  .button__container .language-markup {
+  /* .button__container .language-markup {
     overflow-x: hidden;
     overflow-y: hidden;
+  } */
+
+  .button__container > div.code-toolbar > .toolbar {
+    right: 1rem;
   }
 }
