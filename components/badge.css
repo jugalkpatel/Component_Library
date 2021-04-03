@@ -146,9 +146,6 @@
 }
 
 /* fix overflow of the code block */
-.badge-icon-container .language-markup {
-  height: 10rem;
-}
 
 .avatar-container .language-markup {
   height: 10rem;
