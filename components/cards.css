@@ -189,6 +189,10 @@ body {
   margin-left: 0;
 }
 
+.svg__rating {
+  margin-right: 5px;
+}
+
 .product-info__wish-btn {
   bottom: 7rem;
   right: 0.3rem;
@@ -204,6 +208,10 @@ body {
   font-size: 1.1rem;
 
   font-weight: 900;
+}
+
+.wish-btn--fix {
+  bottom: 10.5rem;
 }
 
 /* product card with overlay */
