@@ -8,6 +8,7 @@
 @import url("./components/cards.css");
 @import url("./components/alerts.css");
 @import url("./components/navbar.css");
+@import url("./components/twoItemsGrid.css");
 
 * {
   box-sizing: border-box;
