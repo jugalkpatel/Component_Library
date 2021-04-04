@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="main">
+      <!-- start of the navbar -->
       <nav class="navbar">
         <div class="navbar__menu">
           <button class="navbar__menu__btn">
@@ -74,7 +75,9 @@
       </nav>
       <!-- end of the navbar -->
 
+      <!-- start of the container -->
       <div class="container">
+        <!-- start of the sidebar-->
         <div class="sidebar">
           <ul class="sidebar__list">
             <span class="sidebar__title">COMPONENTS</span>
@@ -97,8 +100,11 @@
         </div>
         <!-- end of the sidebar -->
 
+        <!-- start of the component container -->
         <div class="component-container center--margin">
           <h1 id="avatar" class="component__avatar component--mod">Avatar</h1>
+
+          <!-- start of the avatar container -->
           <div class="avatar space-comp">
             <div class="avatar-display">
               <img
@@ -152,9 +158,12 @@
             </pre>
           </div>
           <!-- end of the avatar -->
+
           <h1 id="alerts" class="component__alert__title component--mod">
             Alerts
           </h1>
+
+          <!-- start of the alert container -->
           <div class="alerts">
             <div
               class="container--border container--margin responsive--container"
@@ -255,6 +264,7 @@
             Badge
           </h1>
 
+          <!-- start of the badge icon container -->
           <div class="badge-icon-container">
             <div class="badge-div">
               <a href="#" class="badge-icon">
@@ -296,6 +306,8 @@
             </pre>
           </div>
           <!-- end of the badge icon container-->
+
+          <!-- start of the avatar container with badges -->
           <div class="avatar-container">
             <div class="avatar-display">
               <div class="avatar-comp">
@@ -396,12 +408,15 @@
           </code>
       </pre>
           </div>
-          <!-- end of the badge-container with badges -->
+          <!-- end of the avatar container with badges -->
 
           <h1 id="buttons" class="comonent__image__title component--mod">
             Buttons
           </h1>
+
+          <!-- start of the button container -->
           <div class="button__container">
+            <!-- start of the simple button container -->
             <div class="container--border container--margin">
               <div class="flex--container">
                 <button class="button__primary">ADD TO CART</button>
@@ -433,7 +448,9 @@
                   &lt;button class=&quot;button__secondary button--round&quot;&gt;ADD TO CART&lt;/button&gt;
                 </code></pre>
             </div>
-            <!-- end of the button container -->
+            <!-- end of the simple button container -->
+
+            <!-- start of the link button container -->
             <div class="container--border container--margin">
               <div class="flex--container">
                 <a
@@ -476,6 +493,8 @@
               </pre>
             </div>
             <!-- end of the link button container -->
+
+            <!-- start of the icon button container -->
             <div class="container--border container--margin">
               <div class="flex--container">
                 <button class="icon__button icon__cart">
@@ -521,6 +540,8 @@
               </pre>
             </div>
             <!-- end of the icon button container -->
+
+            <!-- start of the floting button container -->
             <div class="container--margin container--border">
               <div class="flex--container">
                 <button class="floating__button">
@@ -620,6 +641,8 @@
           <h1 id="cards" class="component__cards__title component--mod">
             Cards
           </h1>
+
+          <!-- start of the card container -->
           <div class="cards-container">
             <div
               class="container--border container--margin responsive--container"
@@ -629,7 +652,7 @@
                   <a href="#" class="product-info">
                     <img
                       class="product-img product-info__img"
-                      src="https://unsplash.it/200/300"
+                      src="https://source.unsplash.com/random/"
                       alt="product"
                     />Lorem ipsum
                     <span class="product-info__small"
@@ -683,7 +706,7 @@
                   <a href="#" class="product-info">
                     <img
                       class="product-img"
-                      src="https://unsplash.it/200/300"
+                      src="https://source.unsplash.com/random/"
                       alt="product"
                     />
                     Lorem ipsum
@@ -706,21 +729,30 @@
               <pre>
                 <code class="language-markup">
                   &lt;div class=&quot;product-container&quot;&gt;
-                    &lt;button class=&quot;close-btn&quot;&gt;
-                      &lt;img src=&quot;./svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
-                    &lt;/button&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;product-info&quot;&gt;
-                      &lt;img
-                        class=&quot;product-img&quot;
-                        src=&quot;https://unsplash.it/200/300&quot;
-                        alt=&quot;product&quot;
-                      /&gt;Lorem ipsum &lt;span class=&quot;price-tag&quot;&gt;Rs. 250&lt;/span&gt;&lt;/a
-                    &gt;
-                    &lt;button class=&quot;wish-btn wish-btn--fix&quot;&gt;
-                      &lt;img src=&quot;./svgs/wish-btn.svg&quot; alt=&quot;wish-btn&quot; /&gt;
-                    &lt;/button&gt;
-                    &lt;button class=&quot;primary-btn&quot;&gt;ADD TO CART&lt;/button&gt;
-                  &lt;/div&gt;
+                      &lt;button class=&quot;close-btn&quot;&gt;
+                        &lt;img src=&quot;./svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
+                      &lt;/button&gt;
+                      &lt;a href=&quot;#&quot; class=&quot;product-info&quot;&gt;
+                        &lt;img
+                          class=&quot;product-img&quot;
+                          src=&quot;https://unsplash.it/200/300&quot;
+                          alt=&quot;product&quot;
+                        /&gt;
+                        Lorem ipsum
+                        &lt;span class=&quot;product-info__small&quot;
+                          &gt;Lorem ipsum dolor sit Lorem&lt;/span
+                        &gt;
+                        &lt;span class=&quot;product-info__rating&quot;&gt;
+                          &lt;img src=&quot;./svgs/rating.svg&quot; alt=&quot;rating_icon&quot; /&gt;
+                          4.5
+                        &lt;/span&gt;
+                        &lt;span class=&quot;price-tag&quot;&gt;Rs. 250&lt;/span&gt;&lt;/a
+                      &gt;
+                      &lt;button class=&quot;wish-btn wish-btn--fix&quot;&gt;
+                        &lt;img src=&quot;./svgs/wish-btn.svg&quot; alt=&quot;wish-btn&quot; /&gt;
+                      &lt;/button&gt;
+                      &lt;button class=&quot;primary-btn&quot;&gt;ADD TO CART&lt;/button&gt;
+                  &lt;/div&gt; 
                 </code>
             </pre>
             </div>
@@ -960,6 +992,7 @@
             Image
           </h1>
 
+          <!-- start of the image container -->
           <div class="img-container">
             <div class="img-container--border img-container--margin">
               <div class="img-container__simple-img">
@@ -999,9 +1032,12 @@
             </div>
           </div>
           <!-- end of the image-container -->
+
           <h1 id="navigation" class="comonent__image__title component--mod">
             Navigation
           </h1>
+
+          <!-- start of the navbar container -->
           <div class="navbar-container">
             <div
               class="container--margin container--border responsive--container"
@@ -1049,9 +1085,11 @@
             </div>
           </div>
           <!-- end of the navbar container-->
+
           <h1 id="two-col-grid" class="component__image__title component--mod">
             Two Column Grid
           </h1>
+          <!-- start of the two column grid container -->
           <div class="container--border container--margin">
             <div class="two-col-grid">
               <div class="product-container">
@@ -1103,6 +1141,85 @@
               </code>
             </pre>
           </div>
+          <!-- end of the two col grid -->
+
+          <h1 id="three-col-grid" class="comonent__image__title component--mod">
+            Three Column Grid
+          </h1>
+
+          <!-- start of the three column grid -->
+          <div class="container--margin container--border">
+            <div class="three-col-grid">
+              <div class="product-container">
+                <a href="#" class="product-info">
+                  <img
+                    class="product-img product-info__img"
+                    src="https://unsplash.it/200/300"
+                    alt="product"
+                  />Lorem ipsum
+                  <span class="product-info__small"
+                    >Lorem ipsum dolor sit Lorem</span
+                  >
+                  <span class="product-info__rating">
+                    <img src="../svgs/rating.svg" alt="rating_icon" />
+                    4.5
+                  </span>
+                  <span class="price-tag">₹ 2500</span>
+                  <button class="wish-btn product-info__wish-btn">
+                    <img src="../svgs/product-wish.svg" alt="wish_btn" />
+                  </button>
+                </a>
+              </div>
+              <div class="product-container">
+                <a href="#" class="product-info">
+                  <img
+                    class="product-img product-info__img"
+                    src="https://unsplash.it/200/300"
+                    alt="product"
+                  />Lorem ipsum
+                  <span class="product-info__small"
+                    >Lorem ipsum dolor sit Lorem</span
+                  >
+                  <span class="product-info__rating">
+                    <img src="../svgs/rating.svg" alt="rating_icon" />
+                    4.5
+                  </span>
+                  <span class="price-tag">₹ 2500</span>
+                  <button class="wish-btn product-info__wish-btn">
+                    <img src="../svgs/product-wish.svg" alt="wish_btn" />
+                  </button>
+                </a>
+              </div>
+              <div class="product-container">
+                <a href="#" class="product-info">
+                  <img
+                    class="product-img product-info__img"
+                    src="https://unsplash.it/200/300"
+                    alt="product"
+                  />Lorem ipsum
+                  <span class="product-info__small"
+                    >Lorem ipsum dolor sit Lorem</span
+                  >
+                  <span class="product-info__rating">
+                    <img src="../svgs/rating.svg" alt="rating_icon" />
+                    4.5
+                  </span>
+                  <span class="price-tag">₹ 2500</span>
+                  <button class="wish-btn product-info__wish-btn">
+                    <img src="../svgs/product-wish.svg" alt="wish_btn" />
+                  </button>
+                </a>
+              </div>
+            </div>
+            <pre>
+          <code class="language-markup">
+            &lt;div class=&quot;three-col-grid&quot;&gt;
+                --- enter your elements here ---
+            &lt;/div&gt; 
+          </code>
+      </pre>
+          </div>
+          <!-- end of the three column grid -->
         </div>
         <!-- end of the component-container-->
       </div>

@@ -29,6 +29,7 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  height: 20rem;
 }
 
 .distance-margin {
@@ -53,7 +54,7 @@ body {
   outline: 0;
 
   position: absolute;
-  bottom: 7.7rem;
+  bottom: 10.5rem;
   right: 1.2rem;
 
   z-index: var(--zindex-one);
@@ -76,7 +77,7 @@ body {
   outline: 0;
 
   position: absolute;
-  top: 1.4rem;
+  top: 1.6rem;
   left: 1rem;
 
   z-index: var(--zindex-one);
@@ -137,6 +138,10 @@ body {
 
   margin: 1rem;
 
+  min-height: 32rem;
+
+  height: 32rem;
+
   /* padding: 1rem; */
 
   /* border: 1px solid black; */
@@ -153,8 +158,6 @@ body {
   font-size: 1.2rem;
 
   margin: 5px 0;
-
-  position: relative;
 }
 
 .product-info__img {
@@ -194,8 +197,8 @@ body {
 }
 
 .product-info__wish-btn {
-  bottom: 7rem;
-  right: 0.3rem;
+  bottom: 10.5rem;
+  right: 1.3rem;
   z-index: var(--zindex-one);
   cursor: pointer;
 }
@@ -211,7 +214,11 @@ body {
 }
 
 .wish-btn--fix {
-  bottom: 10.5rem;
+  bottom: 10.7rem;
+}
+
+.wish-btn:hover {
+  color: red;
 }
 
 /* product card with overlay */
@@ -393,13 +400,9 @@ body {
 .shadow_card__productimg {
   display: block;
   height: 100%;
-}
-
-.shadow_card--img {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  height: 100%;
 }
 
 .shadow_card__product-info {
