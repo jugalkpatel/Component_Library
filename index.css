@@ -10,6 +10,7 @@
 @import url("./components/navbar.css");
 @import url("./components/twoItemsGrid.css");
 @import url("./components/threeItemsGrid.css");
+@import url("./components/lists.css");
 * {
   box-sizing: border-box;
   margin: 0;
