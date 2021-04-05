@@ -13,6 +13,7 @@
 @import url("./components/lists.css");
 @import url("./components/Text-Utilities.css");
 @import url("./components/toast-notify-snackbar.css");
+@import url("./components/rating.css");
 
 * {
   box-sizing: border-box;
