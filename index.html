@@ -709,8 +709,7 @@
                       src="https://source.unsplash.com/random/"
                       alt="product"
                     />
-                    Lorem ipsum .modal__container .language-markup { height:
-                    10rem; overflow-x: scroll; }
+                    Lorem ipsum
                     <span class="product-info__small"
                       >Lorem ipsum dolor sit Lorem</span
                     >
@@ -1034,6 +1033,73 @@
           </div>
           <!-- end of the image-container -->
 
+          <h1 id="inputs" class="component__inputs__title component--mod">
+            Inputs
+          </h1>
+
+          <!-- start of the input container -->
+          <div class="input__container">
+            <div class="container--margin container--border">
+              <div class="flex--container">
+                <div class="input">
+                  <input
+                    type="text"
+                    class="input__text input--common"
+                    placeholder="Enter Your Name"
+                    value="hello,world"
+                    required
+                  />
+                  <input
+                    type="email"
+                    class="input__email input--common"
+                    placeholder="Enter Email"
+                    required
+                  />
+                  <input
+                    type="password"
+                    class="input_password input--common"
+                    placeholder="Enter Password(must be 8 characters long)"
+                    pattern=".{8,}"
+                    required
+                  />
+                </div>
+              </div>
+              <pre>
+        <code class="language-markup">
+          &lt;input
+            type=&quot;text&quot;
+            class=&quot;input__text input--common&quot;
+            placeholder=&quot;Enter Your Name&quot;
+            value=&quot;hello,world&quot;
+            required
+          /&gt;
+        </code>
+      </pre>
+              <pre>
+        <code class="language-markup">
+           &lt;input
+            type=&quot;email&quot;
+            class=&quot;input__email input--common&quot;
+            placeholder=&quot;Enter Email&quot;
+            required
+          /&gt;
+        </code>
+      </pre>
+              <pre>
+                <code class="language-markup">
+                  &lt;input
+                    type=&quot;password&quot;
+                    class=&quot;input_password input--common&quot;
+                    placeholder=&quot;Enter Password(must be 8 chars long)&quot;
+                    pattern=&quot;.{8,}&quot;
+                    required
+                  /&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+          <!-- end of the input container -->
+
           <h1 id="lists" class="comonent__list__title component--mod">Lists</h1>
           <!-- start of the list container -->
           <div class="list--container">
@@ -1047,17 +1113,17 @@
                 <li class="spaced-list__item">List Item 6</li>
               </ul>
               <pre>
-          <code class="language-markup">
-              &lt;ul class=&quot;spaced-list&quot;&gt;
-                &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 1&lt;/li&gt;
-                &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 2&lt;/li&gt;
-                &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 3&lt;/li&gt;
-                &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 4&lt;/li&gt;
-                &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 5&lt;/li&gt;
-                &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 6&lt;/li&gt;
-              &lt;/ul&gt;
-          </code>
-      </pre>
+                  <code class="language-markup">
+                      &lt;ul class=&quot;spaced-list&quot;&gt;
+                        &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 1&lt;/li&gt;
+                        &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 2&lt;/li&gt;
+                        &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 3&lt;/li&gt;
+                        &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 4&lt;/li&gt;
+                        &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 5&lt;/li&gt;
+                        &lt;li class=&quot;spaced-list__item&quot;&gt;List Item 6&lt;/li&gt;
+                      &lt;/ul&gt;
+                  </code>
+              </pre>
             </div>
             <div class="container--margin container--border">
               <div class="flex--container">
@@ -1162,7 +1228,10 @@
           </div>
           <!-- end of the list container -->
 
-          <h1 id="navigation" class="comonent__image__title component--mod">
+          <h1
+            id="navigation"
+            class="comonent__navigation__title component--mod"
+          >
             Navigation
           </h1>
 

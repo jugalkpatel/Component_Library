@@ -16,6 +16,7 @@ body {
   --secondary-color: #fff;
   --border-color: #e5e5e5;
   --modal-background: rgba(17, 24, 39, 0.3);
+  --zindex-five: 5;
 }
 
 /* Modal */
@@ -35,6 +36,8 @@ body {
   visibility: hidden;
 
   background: var(--modal-background);
+
+  z-index: var(--zindex-five);
 }
 
 .modal--show {

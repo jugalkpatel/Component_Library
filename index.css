@@ -15,6 +15,7 @@
 @import url("./components/toast-notify-snackbar.css");
 @import url("./components/rating.css");
 @import url("./components/modal.css");
+@import url("./components/inputs.css");
 
 * {
   box-sizing: border-box;

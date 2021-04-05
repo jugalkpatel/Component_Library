@@ -8,10 +8,68 @@
     <title>inputs</title>
   </head>
   <body>
-    <div class="input">
-      <div class="input__primary-container">
-        <input type="text" class="input__primary" />
+    <!-- start of the input container -->
+    <div class="input__container">
+      <div class="container--margin container--border">
+        <div class="flex--container">
+          <div class="input">
+            <input
+              type="text"
+              class="input__text input--common"
+              placeholder="Enter Your Name"
+              value="hello,world"
+              required
+            />
+            <input
+              type="email"
+              class="input__email input--common"
+              placeholder="Enter Email"
+              required
+            />
+            <input
+              type="password"
+              class="input_password input--common"
+              placeholder="Enter Password(must be 8 chars long)"
+              pattern=".{8,}"
+              required
+            />
+          </div>
+        </div>
+        <pre>
+        <code class="language-markup">
+          &lt;input
+            type=&quot;text&quot;
+            class=&quot;input__text input--common&quot;
+            placeholder=&quot;Enter Your Name&quot;
+            value=&quot;hello,world&quot;
+            required
+          /&gt;
+        </code>
+      </pre>
+        <pre>
+        <code class="language-markup">
+           &lt;input
+            type=&quot;email&quot;
+            class=&quot;input__email input--common&quot;
+            placeholder=&quot;Enter Email&quot;
+            required
+          /&gt;
+        </code>
+      </pre>
+        <pre>
+        <code class="language-markup">
+          &lt;input
+            type=&quot;password&quot;
+            class=&quot;input_password input--common&quot;
+            placeholder=&quot;Enter Password(must be 8 chars long)&quot;
+            pattern=&quot;.{8,}&quot;
+            required
+          /&gt;
+        </code>
+      </pre>
       </div>
     </div>
+    <!-- end of the input container -->
+    <script src="../resources/prism.js"></script>
   </body>
 </html>

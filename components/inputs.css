@@ -1,23 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
 * {
   box-sizing: border-box;
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-
 :root {
-  --primary-font: Lato;
   --primary-color: #111827;
+  --secondary-color: white;
   --border-color: #e5e5e5;
+  --primary-font: Lato;
+  --input-font-size: 1.3rem;
+  --input-back-color: #ededed;
+  --valid-text-color: #3bb54a;
+  --invalid-text-color: #d1403f;
 }
 
 .input {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
-  border: 1px solid black;
+  width: 100%;
 }
 
-/* .input__primary {
-} */
+.input--common {
+  font-size: var(--input-font-size);
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+
+  border: 0;
+
+  background-color: var(--input-back-color);
+
+  padding: 0.75rem 1rem;
+
+  outline-color: var(--primary-color);
+
+  margin: 1rem;
+
+  outline: 0px;
+}
+
+.input--common:valid {
+  border: 2px solid var(--valid-text-color);
+  outline-color: var(--valid-text-color);
+}
+
+.input--common:invalid {
+  border: 2px solid var(--invalid-text-color);
+}
+
+.input__container .language-markup {
+  height: 10rem;
+}
+
+@media screen and (min-width: 576px) {
+  .input {
+    width: 80%;
+  }
+}
