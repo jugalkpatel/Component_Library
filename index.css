@@ -11,9 +11,13 @@
 @import url("./components/twoItemsGrid.css");
 @import url("./components/threeItemsGrid.css");
 @import url("./components/lists.css");
+@import url("./components/Text-Utilities.css");
+
 * {
   box-sizing: border-box;
+
   margin: 0;
+
   scrollbar-width: thin;
 }
 
@@ -33,6 +37,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
+
   border-radius: 50%;
 }
 
