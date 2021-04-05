@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="./modal.css" />
+  </head>
+  <body>
+    <!-- start of the modal container -->
+    <div class="modal__container">
+      <div class="container--border container--margin">
+        <div class="flex--container">
+          <button class="button__secondary button--round" onclick="showModal()">
+            Show Modal
+          </button>
+        </div>
+        <pre>
+             <code class="language-markup">
+                &lt;div id=&quot;modal&quot; class=&quot;modal&quot;&gt;
+                    &lt;section class=&quot;modal__article&quot;&gt;
+                    &lt;header class=&quot;modal__article__header&quot;&gt;
+                        &lt;h2 class=&quot;modal__article__header__text&quot;&gt;Modal Title&lt;/h2&gt;
+                        &lt;button class=&quot;modal__close-btn&quot; onclick=&quot;{}&quot;&gt;
+                            &lt;img src=&quot;../svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
+                        &lt;/button&gt;
+
+                    &lt;/header&gt;
+                    &lt;div class=&quot;modal__article__info&quot;&gt;
+                        &lt;p&gt;
+                            --- enter you modal text ---
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class=&quot;modal__article__footer&quot;&gt;
+                        &lt;button id=&quot;close-modal&quot;class=&quot;button__primary button--round&quot; onclick=&quot;{}&quot;&gt;Close&lt;/button&gt;
+                    &lt;button class=&quot;button__primary button--round&quot;&gt;
+                        Secondary Action
+                    &lt;/button&gt;
+  
+                    &lt;/footer&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+             </code>
+          </pre>
+      </div>
+      <div id="modal" class="modal">
+        <section class="modal__article">
+          <header class="modal__article__header">
+            <h2 class="modal__article__header__text">Modal Title</h2>
+            <button class="modal__close-btn" onclick="closeModal()">
+              <img src="../svgs/close-btn.svg" alt="close_btn" />
+            </button>
+          </header>
+          <div class="modal__article__info">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusamus, ducimus odit dolorum quidem sunt molestias tenetur
+              voluptatum a similique repellendus veniam officiis asperiores
+              voluptates tempore eveniet voluptas ipsa consequatur mollitia in
+              ut itaque inventore! Error sunt fugiat cupiditate est consectetur.
+              Suscipit iste quaerat dolor odit voluptates repellat maxime
+              provident consectetur?Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Dolorem impedit aperiam adipisci tenetur
+              quaerat! Harum laboriosam accusamus cupiditate sequi adipisci.
+            </p>
+          </div>
+          <footer class="modal__article__footer">
+            <button
+              id="close-modal"
+              class="button__primary button--round"
+              onclick="closeModal()"
+            >
+              Close
+            </button>
+            <button class="button__primary button--round">
+              Secondary Action
+            </button>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <!-- end the modal container-->
+    <script src="./modal.js"></script>
+    <script src="../resources/prism.js"></script>
+  </body>
+</html>
