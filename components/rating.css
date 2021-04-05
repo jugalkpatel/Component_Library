@@ -37,8 +37,10 @@ body {
   border-radius: 0.2rem;
 
   margin: 0.5rem;
+
+  font-weight: 900;
 }
 
 .rating__icon {
-  margin-right: 5px;
+  margin-right: 3px;
 }
