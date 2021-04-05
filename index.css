@@ -109,6 +109,7 @@
 }
 
 .navbar__title__text {
+  margin-left: 0.7rem;
   cursor: pointer;
 }
 
