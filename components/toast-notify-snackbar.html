@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./toast-notify-snackbar.css" />
+    <title>Toast</title>
+  </head>
+  <body>
+    <!-- start of the snackbar -->
+    <div class="snackbar__container">
+      <div class="container--margin container--border">
+        <div class="flex--container">
+          <button
+            class="button__secondary button--round"
+            onclick="showSnackbar()"
+          >
+            Show Toast
+          </button>
+        </div>
+        <div id="snackbar-item" class="snackbar">
+          <li class="stacked-list__item info--item">
+            <img src="../svgs/info-alert.svg" alt="info_icon" />
+            <span class="stacked-list__right">
+              <h3 class="stacked-list__title">Lorem ipsum dolor sit amet.</h3>
+              <small
+                >Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.</small
+              >
+            </span>
+          </li>
+          <button class="snackbar__close-btn" onclick="closeSnackbar()">
+            <img src="../svgs/close-btn.svg" alt="close_btn" />
+          </button>
+        </div>
+        <pre>
+            <code class="language-markup">
+                &lt;div id=&quot;snackbar-item&quot; class=&quot;snackbar&quot;&gt;
+                    &lt;li class=&quot;stacked-list__item info--item&quot;&gt;
+                    &lt;img src=&quot;../svgs/info-alert.svg&quot; alt=&quot;info_icon&quot; /&gt;
+                    &lt;span class=&quot;stacked-list__right&quot;&gt;
+                        &lt;h3 class=&quot;stacked-list__title&quot;&gt;Lorem ipsum dolor sit amet.&lt;/h3&gt;
+                        &lt;small
+                        &gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit.&lt;/small
+                        &gt;
+                    &lt;/span&gt;
+                    &lt;/li&gt;
+                    &lt;button class=&quot;snackbar__close-btn&quot; onclick=&quot;closeSnackbar()&quot;&gt;
+                    &lt;img src=&quot;../svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt; 
+            </code>
+        </pre>
+      </div>
+    </div>
+    <!-- end of the snackbar -->
+    <script src="./showSnackbar.js"></script>
+    <script src="../resources/prism.js"></script>
+  </body>
+</html>

@@ -88,14 +88,14 @@
             <a href="#cards" class="sidebar__item">Cards</a>
             <a href="#image" class="sidebar__item">Image</a>
             <a href="#" class="sidebar__item">Input</a>
-            <a href="#" class="sidebar__item">Lists</a>
+            <a href="#lists" class="sidebar__item">Lists</a>
             <a href="#navigation" class="sidebar__item">Navigation</a>
             <a href="#" class="sidebar__item">Modal</a>
             <a href="#" class="sidebar__item">Rating</a>
             <a href="#" class="sidebar__item">Slider</a>
-            <a href="#" class="sidebar__item">Simplified Grid</a>
-            <a href="#" class="sidebar__item">Text Utilities</a>
-            <a href="#" class="sidebar__item">Toast Notify Snackbar</a>
+            <a href="#two-col-grid" class="sidebar__item">Simplified Grid</a>
+            <a href="#text-utilities" class="sidebar__item">Text Utilities</a>
+            <a href="#snackbar" class="sidebar__item">Toast Notify Snackbar</a>
           </ul>
         </div>
         <!-- end of the sidebar -->
@@ -1348,8 +1348,11 @@
             </pre>
           </div>
           <!-- end of the three column grid -->
-          <h1 id="text-utilities" class="comonent__image__title component--mod">
-            Text Utilites
+          <h1
+            id="text-utilities"
+            class="comonent__text-utilities__title component--mod"
+          >
+            Text Utilities
           </h1>
           <!-- start of the list container -->
           <div class="container--border container--margin">
@@ -1389,6 +1392,59 @@
             </pre>
           </div>
           <!-- end of the list container -->
+
+          <h1 id="snackbar" class="comonent__snackbar__title component--mod">
+            Snackbar
+          </h1>
+          <!-- start of the snackbar -->
+          <div class="snackbar__container">
+            <div class="container--margin container--border">
+              <div class="flex--container">
+                <button
+                  class="button__secondary button--round"
+                  onclick="showSnackbar()"
+                >
+                  Show Snackbar
+                </button>
+              </div>
+              <div id="snackbar-item" class="snackbar">
+                <li class="stacked-list__item info--item">
+                  <img src="../svgs/info-alert.svg" alt="info_icon" />
+                  <span class="stacked-list__right">
+                    <h3 class="stacked-list__title">
+                      Lorem ipsum dolor sit amet.
+                    </h3>
+                    <small
+                      >Lorem, ipsum dolor sit amet consectetur adipisicing
+                      elit.</small
+                    >
+                  </span>
+                </li>
+                <button class="snackbar__close-btn" onclick="closeSnackbar()">
+                  <img src="../svgs/close-btn.svg" alt="close_btn" />
+                </button>
+              </div>
+              <pre>
+                  <code class="language-markup">
+                      &lt;div id=&quot;snackbar-item&quot; class=&quot;snackbar&quot;&gt;
+                          &lt;li class=&quot;stacked-list__item info--item&quot;&gt;
+                          &lt;img src=&quot;../svgs/info-alert.svg&quot; alt=&quot;info_icon&quot; /&gt;
+                          &lt;span class=&quot;stacked-list__right&quot;&gt;
+                              &lt;h3 class=&quot;stacked-list__title&quot;&gt;Lorem ipsum dolor sit amet.&lt;/h3&gt;
+                              &lt;small
+                              &gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit.&lt;/small
+                              &gt;
+                          &lt;/span&gt;
+                          &lt;/li&gt;
+                          &lt;button class=&quot;snackbar__close-btn&quot; onclick=&quot;closeSnackbar()&quot;&gt;
+                          &lt;img src=&quot;../svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
+                          &lt;/button&gt;
+                      &lt;/div&gt; 
+                  </code>
+              </pre>
+            </div>
+          </div>
+          <!-- end of the snackbar -->
         </div>
         <!-- end of the component-container-->
       </div>
@@ -1423,6 +1479,7 @@
       </a>
     </div>
     <!--end of the main -->
+    <script src="./components/showSnackbar.js"></script>
     <script src="./resources/prism.js"></script>
   </body>
 </html>

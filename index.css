@@ -12,6 +12,7 @@
 @import url("./components/threeItemsGrid.css");
 @import url("./components/lists.css");
 @import url("./components/Text-Utilities.css");
+@import url("./components/toast-notify-snackbar.css");
 
 * {
   box-sizing: border-box;
