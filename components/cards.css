@@ -151,6 +151,20 @@ body {
   box-shadow: var(--shadow);
 }
 
+.product-info__text {
+  display: block;
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+
+  width: 13rem;
+
+  white-space: nowrap;
+
+  max-height: 1.5rem;
+}
+
 .product-info {
   text-decoration: none;
 
@@ -166,9 +180,20 @@ body {
 
 .product-info__small {
   display: block;
+
   font-size: var(--small-text);
+
   color: var(--small-text-color);
+
   font-weight: 500;
+
+  width: 10rem;
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+
+  white-space: nowrap;
 }
 
 .product-info__rating {
