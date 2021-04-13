@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("./index.css");
+@import url("./components/button.css");
+@import url("./components/images.css");
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  scrollbar-width: thin;
+}
+
+:root {
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --border-color: #e5e5e5;
+  --secondary-color: #fff;
+}
+
+.landing-page {
+  padding: 0 1rem;
+}
+
+.landing-page .navbar {
+  border-bottom: 3px solid var(--primary-color);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.landing-page .navbar__title {
+  justify-content: flex-start;
+  border: 0;
+  padding: 0;
+  max-width: max-content;
+}
+
+.navbar__navigation .button__link-button {
+  background-color: transparent;
+  border: 0;
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.landing-page .navbar__navigation {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  max-width: fit-content;
+}
+
+.landing-page .navbar__menu__social__github {
+  padding: 0.3rem;
+  margin: 0.4rem;
+  margin-right: 0;
+}
+
+.landing-page .responsive-img {
+  object-fit: contain;
+}
+
+.landing-page__content {
+  font-size: 1rem;
+}
+
+.landing-page__content__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page__content .button__link-button {
+  display: flex;
+  /* align-content: center; */
+  /* width: 100%; */
+  cursor: pointer;
+}
+
+.landing-page__content .svg--right-margin {
+  display: block;
+  margin-left: 0.5rem;
+}
+
+.button__github {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}

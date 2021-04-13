@@ -21,6 +21,7 @@ body {
   --small-text: 0.8rem;
   --small-text-color: #878787;
   --zindex-one: 1;
+  --rating-color: #388e3c;
 }
 
 /* utility */
@@ -54,7 +55,7 @@ body {
   outline: 0;
 
   position: absolute;
-  bottom: 10.5rem;
+  bottom: 11.5rem;
   right: 1.2rem;
 
   z-index: var(--zindex-one);
@@ -127,7 +128,7 @@ body {
   display: inline-flex;
   flex-direction: column;
 
-  max-width: 15rem;
+  max-width: 20rem;
 
   font-family: var(--primary-font);
   font-weight: bolder;
@@ -138,9 +139,9 @@ body {
 
   margin: 1rem;
 
-  min-height: 32rem;
+  min-height: 33rem;
 
-  height: 32rem;
+  /* height: 32rem; */
 
   /* padding: 1rem; */
 
@@ -152,17 +153,19 @@ body {
 }
 
 .product-info__text {
-  display: block;
-
-  text-overflow: ellipsis;
+  display: -webkit-box;
 
   overflow: hidden;
 
-  width: 13rem;
+  -webkit-box-orient: vertical;
 
-  white-space: nowrap;
-
-  max-height: 1.5rem;
+  -webkit-line-clamp: 2;
+  /* text-overflow: ellipsis; */
+  /* max-width: 13rem; */
+  /* width: 100%; */
+  /* white-space: nowrap; */
+  /* line-height: 1rem; */
+  /* max-height: 3rem; */
 }
 
 .product-info {
@@ -203,7 +206,7 @@ body {
 
   max-width: max-content;
 
-  background-color: var(--primary-color);
+  background-color: var(--rating-color);
   color: var(--secondary-color);
 
   font-size: var(--small-text);
@@ -222,7 +225,7 @@ body {
 }
 
 .product-info__wish-btn {
-  bottom: 10.5rem;
+  bottom: 11.5rem;
   right: 1.3rem;
   z-index: var(--zindex-one);
   cursor: pointer;
@@ -239,11 +242,7 @@ body {
 }
 
 .wish-btn--fix {
-  bottom: 10.7rem;
-}
-
-.wish-btn:hover {
-  color: red;
+  bottom: 12rem;
 }
 
 /* product card with overlay */
@@ -324,9 +323,9 @@ body {
 
   position: relative;
 
-  height: 20rem;
+  height: 15rem;
 
-  width: fit-content;
+  width: 40rem;
 
   margin: 1rem;
 
@@ -339,7 +338,7 @@ body {
 .hcard-product-info {
   display: block;
   /* height: 100%; */
-  width: 40%;
+  width: 30%;
   margin: 0;
 }
 
@@ -348,11 +347,11 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1rem;
   flex-shrink: 2;
 
   border-left: 0;
-  width: 60%;
+  width: 70%;
 }
 
 .hcard-title {
@@ -406,10 +405,6 @@ body {
   margin: 1rem;
 
   border-radius: 1rem;
-  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12); */
 
   width: 20rem;
 
@@ -522,8 +517,8 @@ body {
   }
 
   .primary-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   .heart-svg {
@@ -532,5 +527,12 @@ body {
 
   .svg-close {
     stroke: var(--close-svg-stroke);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .primary-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 }

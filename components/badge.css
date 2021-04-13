@@ -7,8 +7,8 @@
   --primary-font: Lato;
   --primary-color: #111827;
   --border-color: #e5e5e5;
-  --badge-color-pink: #f16565;
   --secondary-color: #fff;
+  --badge-color-pink: #f16565;
   --badge-color-blue: #2a77f0;
 }
 
@@ -27,8 +27,9 @@
 
 .badge-div {
   display: flex;
+  padding-top: 1rem;
 
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
 }
 
 .badge-icon {
@@ -38,7 +39,8 @@
 
   display: inline-block;
 
-  padding: 2rem;
+  /* padding: 1rem; */
+  margin: 1rem;
 
   border-radius: 50%;
 
@@ -46,6 +48,12 @@
 }
 
 .num-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 1.5rem;
+
   position: absolute;
 
   background-color: var(--badge-color-pink);
@@ -61,12 +69,14 @@
   font-size: 0.8rem;
   font-weight: 600;
 
-  bottom: 2.8rem;
-  right: 1rem;
+  top: -0.5rem;
+  left: 1rem;
+
+  text-align: center;
 }
 
 .cart-badge {
-  background-color: var(--badge-color-pink);
+  background-color: var(--badge-color-blue);
   color: var(--secondary-color);
 }
 

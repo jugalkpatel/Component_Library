@@ -10,10 +10,10 @@ body {
 }
 :root {
   --primary-font: Lato;
-  --font-weight: 600;
   --primary-color: #111827;
   --secondary-color: #fff;
   --border-color: #e5e5e5;
+  --font-weight: 600;
   --button-radius: 0.3rem;
   --twitter-color: #1da1f2;
   --facebook-color: #385898;
