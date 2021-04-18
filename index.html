@@ -545,11 +545,17 @@
               <div class="flex--container">
                 <div class="product-container">
                   <a href="#" class="product-info">
-                    <img
-                      class="product-img product-info__img"
-                      src="https://source.unsplash.com/random/"
-                      alt="product"
-                    />Lorem ipsum
+                    <span class="product__img__container">
+                      <img
+                        class="product-img product-info__img"
+                        src="https://source.unsplash.com/random/"
+                        alt="product"
+                      />
+                      <button class="wish-btn">
+                        <img src="./svgs/product-wish.svg" alt="wish_btn" />
+                      </button>
+                    </span>
+                    Lorem ipsum
                     <span class="product-info__small"
                       >Lorem ipsum dolor sit Lorem</span
                     >
@@ -558,9 +564,6 @@
                       4.5
                     </span>
                     <span class="price-tag">₹ 2500</span>
-                    <button class="wish-btn product-info__wish-btn">
-                      <img src="./svgs/product-wish.svg" alt="wish_btn" />
-                    </button>
                   </a>
                 </div>
               </div>
@@ -570,20 +573,23 @@
                 <code class="language-markup">
                   &lt;div class=&quot;product-container&quot;&gt;
                     &lt;a href=&quot;#&quot; class=&quot;product-info&quot;&gt;
-                      &lt;img
-                        class=&quot;product-img product-info__img&quot;
-                        src=&quot;https://unsplash.it/200/300&quot;
-                        alt=&quot;product&quot;
-                      /&gt;Lorem ipsum
+                      &lt;span class=&quot;product__img__container&quot;&gt;
+                        &lt;img
+                          class=&quot;product-img product-info__img&quot;
+                          src=&quot;https://source.unsplash.com/random/&quot;
+                          alt=&quot;product&quot;
+                        /&gt;
+                        &lt;button class=&quot;wish-btn&quot;&gt;
+                          &lt;img src=&quot;./svgs/product-wish.svg&quot; alt=&quot;wish_btn&quot; /&gt;
+                        &lt;/button&gt;
+                      &lt;/span&gt;
+                      Lorem ipsum
                       &lt;span class=&quot;product-info__small&quot;&gt;Lorem ipsum dolor sit Lorem&lt;/span&gt;
                       &lt;span class=&quot;product-info__rating&quot;&gt;
                         &lt;img src=&quot;./svgs/rating.svg&quot; alt=&quot;rating_icon&quot; /&gt;
                         4.5
                       &lt;/span&gt;
                       &lt;span class=&quot;price-tag&quot;&gt;₹ 2500&lt;/span&gt;
-                      &lt;button class=&quot;wish-btn product-info__wish-btn&quot;&gt;
-                        &lt;img src=&quot;./svgs/product-wish.svg&quot; alt=&quot;wish_btn&quot; /&gt;
-                      &lt;/button&gt;
                     &lt;/a&gt;
                 &lt;/div&gt;
                 </code>
@@ -596,15 +602,21 @@
             >
               <div class="flex--container">
                 <div class="product-container">
-                  <button class="close-btn">
-                    <img src="./svgs/close-btn.svg" alt="close_btn" />
-                  </button>
                   <a href="#" class="product-info">
-                    <img
-                      class="product-img"
-                      src="https://source.unsplash.com/random/"
-                      alt="product"
-                    />
+                    <span class="product__img__container">
+                      <button class="close-btn">
+                        <img src="./svgs/close-btn.svg" alt="close_btn" />
+                      </button>
+                      <img
+                        class="product-img product-info__img"
+                        src="https://source.unsplash.com/random/"
+                        alt="product"
+                      />
+                      <button class="wish-btn">
+                        <img src="./svgs/product-wish.svg" alt="wish_btn" />
+                      </button>
+                    </span>
+
                     <span class="product-info__text"
                       >lorem ipsum Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Distinctio, veniam!</span
@@ -619,9 +631,7 @@
                     </span>
                     <span class="price-tag">Rs. 250</span></a
                   >
-                  <button class="wish-btn wish-btn--fix">
-                    <img src="./svgs/wish-btn.svg" alt="wish-btn" />
-                  </button>
+
                   <button class="primary-btn">ADD TO CART</button>
                 </div>
               </div>
@@ -629,15 +639,21 @@
               <pre>
                 <code class="language-markup">
                   &lt;div class=&quot;product-container&quot;&gt;
-                      &lt;button class=&quot;close-btn&quot;&gt;
-                        &lt;img src=&quot;./svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
-                      &lt;/button&gt;
+                      
                       &lt;a href=&quot;#&quot; class=&quot;product-info&quot;&gt;
+                      &lt;span class=&quot;product__img__container&quot;&gt;
+                        &lt;button class=&quot;close-btn&quot;&gt;
+                          &lt;img src=&quot;./svgs/close-btn.svg&quot; alt=&quot;close_btn&quot; /&gt;
+                        &lt;/button&gt;
                         &lt;img
-                          class=&quot;product-img&quot;
-                          src=&quot;https://unsplash.it/200/300&quot;
+                          class=&quot;product-img product-info__img&quot;
+                          src=&quot;https://source.unsplash.com/random/&quot;
                           alt=&quot;product&quot;
                         /&gt;
+                        &lt;button class=&quot;wish-btn&quot;&gt;
+                          &lt;img src=&quot;./svgs/product-wish.svg&quot; alt=&quot;wish_btn&quot; /&gt;
+                        &lt;/button&gt;
+                      &lt;/span&gt;
                         Lorem ipsum
                         &lt;span class=&quot;product-info__small&quot;
                           &gt;Lorem ipsum dolor sit Lorem&lt;/span
@@ -648,9 +664,7 @@
                         &lt;/span&gt;
                         &lt;span class=&quot;price-tag&quot;&gt;Rs. 250&lt;/span&gt;&lt;/a
                       &gt;
-                      &lt;button class=&quot;wish-btn wish-btn--fix&quot;&gt;
-                        &lt;img src=&quot;./svgs/wish-btn.svg&quot; alt=&quot;wish-btn&quot; /&gt;
-                      &lt;/button&gt;
+                      
                       &lt;button class=&quot;primary-btn&quot;&gt;ADD TO CART&lt;/button&gt;
                   &lt;/div&gt; 
                 </code>
@@ -664,15 +678,20 @@
               <div class="flex--container">
                 <div class="product-container">
                   <a href="#" class="product-info">
-                    <img
-                      class="product-img"
-                      src="https://unsplash.it/200/300"
-                      alt="product"
-                    />Lorem ipsum <span class="price-tag">Rs. 250</span></a
-                  >
-                  <button class="wish-btn">
-                    <img src="./svgs/wish-btn.svg" alt="wish-btn" />
-                  </button>
+                    <span class="product__img__container">
+                      <img
+                        class="product-img product-info__img"
+                        src="https://source.unsplash.com/random/"
+                        alt="product"
+                      />
+                      <button class="wish-btn">
+                        <img src="./svgs/product-wish.svg" alt="wish_btn" />
+                      </button>
+                    </span>
+                    Lorem ipsum
+                    <span class="price-tag">Rs. 250</span>
+                  </a>
+
                   <button class="primary-btn">ADD TO CART</button>
                   <div class="overlay-div">
                     <button class="close-btn">

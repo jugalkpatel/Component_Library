@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("../resources/prism.css");
-@import url("./utils.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('../resources/prism.css');
+@import url('./utils.css');
 * {
   box-sizing: border-box;
 }
@@ -21,6 +21,7 @@ body {
   --small-text: 0.8rem;
   --small-text-color: #878787;
   --zindex-one: 1;
+  --zindex-two: 2;
   --rating-color: #388e3c;
 }
 
@@ -55,11 +56,11 @@ body {
   outline: 0;
 
   position: absolute;
-  bottom: 11.5rem;
-  right: 1.2rem;
+  right: 0.3rem;
+  bottom: 0.3rem;
 
-  z-index: var(--zindex-one);
-  /* cursor: progress; */
+  z-index: var(--zindex-two);
+  cursor: pointer;
 }
 
 .heart-svg:hover {
@@ -78,12 +79,12 @@ body {
   outline: 0;
 
   position: absolute;
-  top: 1.6rem;
-  left: 1rem;
+  top: 0;
+  left: 0;
 
-  z-index: var(--zindex-one);
+  z-index: var(--zindex-two);
 
-  /* cursor: progress; */
+  cursor: pointer;
 }
 
 .svg-close:hover {
@@ -139,13 +140,17 @@ body {
 
   margin: 1rem;
 
-  min-height: 33rem;
-
+  max-height: 35rem;
   /* height: 32rem; */
 
   /* padding: 1rem; */
 
   /* border: 1px solid black; */
+}
+
+.product__img__container {
+  display: block;
+  position: relative;
 }
 
 .product-container:hover {
@@ -224,13 +229,6 @@ body {
   margin-right: 5px;
 }
 
-.product-info__wish-btn {
-  bottom: 11.5rem;
-  right: 1.3rem;
-  z-index: var(--zindex-one);
-  cursor: pointer;
-}
-
 .price-tag {
   display: block;
 
@@ -239,10 +237,6 @@ body {
   font-size: 1.1rem;
 
   font-weight: 900;
-}
-
-.wish-btn--fix {
-  bottom: 12rem;
 }
 
 /* product card with overlay */
@@ -469,6 +463,10 @@ body {
 
   top: 1rem;
   right: 1rem;
+
+  z-index: var(--zindex-two);
+
+  cursor: pointer;
 }
 
 /* fix overflow of the code block */
