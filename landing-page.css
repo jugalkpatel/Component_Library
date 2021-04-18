@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("./index.css");
-@import url("./components/button.css");
-@import url("./components/images.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('./index.css');
+@import url('./components/button.css');
+@import url('./components/images.css');
 
 * {
   box-sizing: border-box;
@@ -45,16 +45,17 @@
 }
 
 .landing-page .navbar__navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto;
   /* justify-content: center; */
-  align-items: center;
-  max-width: fit-content;
+  justify-items: center;
 }
 
 .landing-page .navbar__menu__social__github {
   padding: 0.3rem;
   margin: 0.4rem;
   margin-right: 0;
+  width: max-content;
 }
 
 .landing-page .responsive-img {
@@ -62,6 +63,10 @@
 }
 
 .landing-page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 1rem;
 }
 
@@ -69,13 +74,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 
 .landing-page__content .button__link-button {
   display: flex;
-  /* align-content: center; */
-  /* width: 100%; */
   cursor: pointer;
+  min-width: 10rem;
+}
+
+.landing-page__hero-line {
+  font-family: var(--primary-font);
+  text-align: center;
+  font-weight: 900;
+  max-width: 100vw;
 }
 
 .landing-page__content .svg--right-margin {
@@ -86,4 +98,10 @@
 .button__github {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 576px) {
+  .navbar__title {
+    position: relative;
+  }
 }
