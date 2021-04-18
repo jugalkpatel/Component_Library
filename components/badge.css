@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap');
 
 :root {
   --presence-color: #3aa169;
@@ -66,7 +66,7 @@
   border-radius: 60%;
 
   font-family: var(--primary-font);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
 
   top: -0.5rem;
