@@ -106,6 +106,8 @@ body {
   outline: var(--primary-color);
 
   cursor: pointer;
+
+  color: var(--primary-color);
 }
 
 .primary-btn:hover {
