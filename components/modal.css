@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('../resources/prism.css');
-@import url('./utils.css');
-@import url('./button.css');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+@import url("./button.css");
 * {
   box-sizing: border-box;
 }
@@ -16,6 +16,7 @@ body {
   --secondary-color: #fff;
   --border-color: #e5e5e5;
   --modal-background: rgba(17, 24, 39, 0.3);
+  --modal__button_hover: rgba(255, 255, 255, 0.8);
   --zindex-five: 5;
 }
 
@@ -104,6 +105,11 @@ body {
   display: flex;
   margin-top: 1rem;
   justify-content: flex-end;
+}
+
+.modal__article__footer .button__primary:hover {
+  background-color: var(--modal__button_hover);
+  color: var(--primary-color);
 }
 
 /* codeblock length fix */

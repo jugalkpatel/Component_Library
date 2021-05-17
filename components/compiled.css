@@ -1144,6 +1144,8 @@ body {
   background-color: transparent;
   border: 0;
   outline: 0;
+
+  cursor: pointer;
 }
 
 .modal__article__header__text {

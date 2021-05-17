@@ -50,3 +50,8 @@
   width: 100%;
   border-radius: 50%;
 }
+
+.avatar .language-markup {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}

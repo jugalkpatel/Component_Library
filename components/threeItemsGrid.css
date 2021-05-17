@@ -6,6 +6,12 @@
   justify-items: center;
 }
 
+.fix--width {
+  width: 10rem;
+  padding: 0;
+  margin: 0;
+}
+
 @media screen and (min-width: 820px) {
   .three-col-grid {
     grid-template-columns: repeat(3, 1fr);
