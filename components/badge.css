@@ -160,3 +160,9 @@
 .avatar-container .language-markup {
   height: 10rem;
 }
+
+
+.badge-div .language-markup {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
