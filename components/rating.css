@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #111827;
+  --secondary-color: white;
+  --border-color: #e5e5e5;
+  --primary-font: Lato;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: max-content;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  font-size: var(--small-text);
+  text-align: center;
+
+  font-family: var(--primary-font);
+
+  padding: 0.3rem;
+
+  border-radius: 0.2rem;
+
+  margin: 0.5rem;
+
+  font-weight: 900;
+}
+
+.rating__icon {
+  margin-right: 3px;
+}

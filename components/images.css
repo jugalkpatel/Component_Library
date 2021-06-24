@@ -1,0 +1,54 @@
+@import url("./utils.css");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border-color: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 1rem; */
+}
+
+.img-container__simple-img,
+.img-container__round-img {
+  width: 100%;
+  height: 25rem;
+  margin: auto;
+}
+
+.responsive-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.img-container--border {
+  border: 1px solid var(--border-color);
+  padding: 1rem 0 0 0;
+}
+
+.img-container--margin {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 450px) {
+  .img-container__simple-img,
+  .img-container__round-img {
+    width: 25rem;
+  }
+}

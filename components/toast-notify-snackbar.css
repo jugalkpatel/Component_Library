@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+@import url("./button.css");
+@import url("./lists.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --secondary-color: #fff;
+  --border-color: #e5e5e5;
+  --zindex-one: 1;
+  --zindex-two: 2;
+  --zindex-three: 3;
+  --snackbar-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* snackbar */
+
+.snackbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+
+  box-shadow: var(--snackbar-shadow);
+
+  padding-right: 1rem;
+
+  margin: 0.5rem;
+
+  visibility: hidden;
+
+  background-color: var(--secondary-color);
+
+  z-index: var(--zindex-two);
+}
+
+.snackbar .stacked-list__item {
+  margin: 0;
+}
+
+.snackbar--show {
+  visibility: visible;
+}
+
+.snackbar--hide {
+  visibility: hidden;
+}
+
+.snackbar__close-btn {
+  display: inline-block;
+
+  width: fit-content;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  z-index: var(--zindex-three);
+
+  /* cursor: progress; */
+}
+
+/* fix codeblock height */
+.snackbar__container .language-markup {
+  height: 10rem;
+}
+
+@media screen and (min-width: 576px) {
+  .snackbar {
+    max-width: 30rem;
+    bottom: 0;
+    right: 0;
+  }
+}

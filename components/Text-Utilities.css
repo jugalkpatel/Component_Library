@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("./resources/prism.css");
+@import url("./utils.css");
+@import url("./lists.css");
+
+:root {
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --border-color: #e5e5e5;
+  --gray-text: #6b7280;
+}
+
+.spaced-list {
+  margin: 1rem;
+}
+
+/* Heading */
+.heading {
+  color: var(--primary-color);
+
+  font-family: var(--primary-font);
+
+  max-width: fit-content;
+}
+
+/* Small Text */
+.small-text {
+  color: var(--primary-color);
+
+  font-family: var(--primary-font);
+
+  font-size: 0.75rem;
+
+  max-width: fit-content;
+}
+
+/* Gray Text */
+.gray-text {
+  color: var(--gray-text);
+
+  font-family: var(--primary-font);
+
+  width: fit-content;
+}
+
+.spaced-list__item--center {
+  text-align: center;
+}

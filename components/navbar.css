@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --border-color: #e5e5e5;
+}
+
+/* .navbar-container {
+  width: 100%;
+} */
+
+.navbar-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  padding: 0 1rem 0 1rem;
+}
+
+.navbar-component__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 1rem;
+  padding-top: 0;
+
+  border-bottom: 3px solid var(--primary-color);
+
+  color: var(--primary-color);
+
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.navbar-component__menu {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 1rem;
+}
+
+.navbar-component__menu__btn {
+  display: inline-block;
+  width: fit-content;
+
+  padding: 0;
+
+  background-color: transparent;
+
+  border: 0;
+
+  outline: 0;
+
+  cursor: pointer;
+}
+
+.navbar-component__menu__social__twitter,
+.navbar-component__menu__social__github {
+  display: inline-block;
+  margin: 0 0.1rem;
+}
+
+.navbar-component__title__text {
+  cursor: pointer;
+}
+
+/* fix overflow the codeblock */
+.navbar-container .language-markup {
+  height: 10rem;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar-component {
+    padding: 0 2rem 0 2rem;
+  }
+  .navbar-component__title {
+    position: absolute;
+    top: 1rem;
+    width: 90%;
+    border: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-component__menu {
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+    border-bottom: 3px solid var(--primary-color);
+  }
+  .navbar-component__title__text {
+    z-index: 2;
+  }
+}

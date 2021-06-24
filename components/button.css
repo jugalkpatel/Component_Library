@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --secondary-color: #fff;
+  --border-color: #e5e5e5;
+  --font-weight: 600;
+  --button-radius: 0.3rem;
+  --twitter-color: #1da1f2;
+  --facebook-color: #385898;
+  --github-color: #24292e;
+  --button-margin: 0.5rem;
+  --button-padding: 0.6rem;
+  --button-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* primary button */
+.button__primary {
+  display: inline-block;
+  background-color: var(--secondary-color);
+
+  color: var(--primary-color);
+
+  border: 1.8px solid var(--primary-color);
+
+  padding: var(--button-padding);
+
+  margin: var(--button-margin);
+
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+
+  outline: var(--primary-color);
+
+  cursor: pointer;
+
+  color: var(--primary-color);
+}
+/* secondary button */
+.button__secondary {
+  display: inline-block;
+
+  background-color: var(--primary-color);
+
+  color: var(--secondary-color);
+
+  border: 1.8px solid var(--primary-color);
+
+  padding: var(--button-padding);
+
+  margin: var(--button-margin);
+
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+
+  cursor: pointer;
+
+  outline: var(--primary-color);
+  box-shadow: var(--button-shadow);
+}
+
+/* round button utility */
+
+.button--round {
+  border-radius: var(--button-radius);
+}
+
+/* Link Button */
+
+.button__link-button {
+  text-decoration: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* display: inline-block; */
+
+  text-align: center;
+
+  padding: var(--button-padding);
+
+  margin: var(--button-margin);
+
+  background-color: var(--primary-color);
+
+  color: var(--secondary-color);
+
+  border: 1px solid var(--primary-color);
+
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight);
+
+  max-width: max-content;
+
+  height: max-content;
+
+  box-shadow: var(--button-shadow);
+}
+
+.svg--right-margin {
+  margin-right: 0.3rem;
+}
+
+/* icon button */
+.icon__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: var(--primary-color);
+
+  /* border: 1px solid var(--primary-color); */
+
+  background-color: var(--primary-color);
+
+  border: 0;
+
+  color: white;
+
+  box-shadow: var(--button-shadow);
+
+  /* color: var(--secondary-color); */
+
+  padding: var(--button-padding);
+
+  margin: var(--button-margin);
+
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+}
+
+/* floating button */
+.floating__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: var(--primary-color);
+
+  background-color: var(--primary-color);
+
+  border: 0;
+
+  padding: var(--button-padding);
+
+  display: flex;
+  justify-content: center;
+
+  box-shadow: var(--button-shadow);
+
+  margin: var(--button-margin);
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* utilities for twitter, facebook and github buttons */
+.twitter--btn {
+  background-color: var(--twitter-color);
+  color: var(--secondary-color);
+
+  border: 1px solid var(--twitter-color);
+}
+
+.facebook--btn {
+  background-color: var(--facebook-color);
+  color: var(--secondary-color);
+
+  border: 1px solid var(--facebook-color);
+}
+
+.github--btn {
+  background-color: var(--github-color);
+  color: var(--secondary-color);
+
+  border: 1px solid var(--github-color);
+}
+
+.button__container .toolbar {
+  right: 1rem;
+}
+
+.button__container .language-markup {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+/* .btn-codeblock--height {
+  height: 10rem;
+} */
+
+@media screen and (min-width: 576px) {
+  .button__primary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  /* codeblock overflow fix for desktop and tablets */
+  /* .button__container .language-markup {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  } */
+
+  .button__container > div.code-toolbar > .toolbar {
+    right: 1rem;
+  }
+}

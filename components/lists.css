@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('../resources/prism.css');
+@import url('./utils.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #111827;
+  --secondary-color: white;
+  --border-color: #e5e5e5;
+  --primary-font: Lato;
+  --hover-color: #d1d5db;
+  --red-list-color: red;
+  --blue-list-color: blue;
+  --green-list-color: #4eb23a;
+  --yellow-list-color: #f7bd3b;
+}
+
+/* spaced-list */
+
+.spaced-list {
+  list-style-type: none;
+
+  margin: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--border-color);
+}
+
+.spaced-list__item {
+  padding: 0.5rem;
+
+  margin: 0.5rem;
+
+  font-family: var(--primary-font);
+  font-size: 1rem;
+
+  color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+/* stacked-list */
+
+.stacked-list {
+  list-style-type: none;
+
+  margin: 1rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--border-color);
+}
+
+.stacked-list__item {
+  display: flex;
+  padding: 1rem;
+
+  font-family: var(--primary-font);
+
+  color: var(--primary-color);
+
+  /* border: 1px solid var(--primary-color); */
+
+  margin: 1rem;
+}
+
+.stacked-list__title {
+  margin: 0;
+}
+
+.stacked-list__right {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.info--item {
+  border-left: 5px solid var(--blue-list-color);
+}
+
+.error--item {
+  border-left: 5px solid var(--red-list-color);
+}
+
+.warning--item {
+  border-left: 5px solid var(--yellow-list-color);
+}
+
+.success--item {
+  border-left: 5px solid var(--green-list-color);
+}
+
+.list--container .language-markup {
+  height: 10rem;
+}
+
+/* .container--margin {
+  margin: 1rem;
+} */
+
+@media screen and (min-width: 576px) {
+  .spaced-list__item:hover {
+    background-color: var(--hover-color);
+  }
+  .stacked-list__item:hover {
+    background-color: var(--hover-color);
+  }
+}
