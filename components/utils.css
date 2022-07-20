@@ -1,0 +1,26 @@
+:root {
+  --border-color: #e5e5e5;
+}
+.container--border {
+  border: 1px solid var(--border-color);
+  padding: 1rem 0 0 0;
+}
+
+.container--margin {
+  margin-bottom: 1rem;
+}
+
+.flex--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.responsive--container {
+  width: 100%;
+}
+
+.center--margin {
+  margin: 0 auto;
+}

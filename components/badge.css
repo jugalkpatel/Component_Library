@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap');
+
+:root {
+  --presence-color: #3aa169;
+  --badge-border-color: #fff;
+  --border-color: #e5e5e5;
+  --primary-font: Lato;
+  --primary-color: #111827;
+  --border-color: #e5e5e5;
+  --secondary-color: #fff;
+  --badge-color-pink: #f16565;
+  --badge-color-blue: #2a77f0;
+}
+
+.badge-icon-container,
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid var(--border-color);
+  border-bottom: 0;
+
+  margin-bottom: 2rem;
+
+  border-radius: 5px;
+}
+
+.badge-div {
+  display: flex;
+  padding-top: 1rem;
+
+  /* border-bottom: 1px solid var(--border-color); */
+}
+
+.badge-icon {
+  position: relative;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  /* padding: 1rem; */
+  margin: 1rem;
+
+  border-radius: 50%;
+
+  color: var(--primary-color);
+}
+
+.num-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 1.5rem;
+
+  position: absolute;
+
+  background-color: var(--badge-color-pink);
+
+  color: var(--secondary-color);
+
+  padding: 0.2rem;
+
+  border: 2px solid var(--secondary-color);
+  border-radius: 60%;
+
+  font-family: var(--primary-font);
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  top: -0.5rem;
+  left: 1rem;
+
+  text-align: center;
+}
+
+.cart-badge {
+  background-color: var(--badge-color-blue);
+  color: var(--secondary-color);
+}
+
+.notif-badge {
+  background-color: var(--badge-color-blue);
+}
+
+.avatar-container .avatar-display {
+  display: flex;
+  align-items: center;
+}
+
+/* avatar component */
+
+.avatar-comp {
+  position: relative;
+
+  margin: 1rem;
+}
+
+.avatar-badge {
+  position: absolute;
+
+  display: inline-block;
+
+  min-width: 1rem;
+  min-height: 1rem;
+
+  background-color: var(--presence-color);
+  border-radius: 50%;
+  border: 2px solid var(--badge-border-color);
+
+  bottom: 0;
+  right: 0;
+}
+
+.avatar-badge-large {
+  min-height: 2rem;
+  min-width: 2rem;
+
+  bottom: 0.5rem;
+}
+
+.avatar-badge-medium {
+  min-height: 1.3rem;
+  min-width: 1.3rem;
+
+  bottom: 0.3rem;
+}
+
+.avatar-badge-small {
+  bottom: 0.3rem;
+}
+
+.avatar-badge-ex-small {
+  min-height: 0.7rem;
+  min-width: 0.7em;
+
+  bottom: 0.3rem;
+}
+
+.badge-icon-container .avatar-display {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  padding: 1rem;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.badge-utils {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* fix overflow of the code block */
+
+.avatar-container .language-markup {
+  height: 10rem;
+}
+
+
+.badge-div .language-markup {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}

@@ -1,0 +1,14 @@
+@import url('./cards.css');
+@import url('./utils.css');
+@import url('../resources/prism.css');
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .two-col-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

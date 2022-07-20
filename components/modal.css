@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+@import url("./button.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-font: Lato;
+  --font-weight: 600;
+  --primary-color: #111827;
+  --secondary-color: #fff;
+  --border-color: #e5e5e5;
+  --modal-background: rgba(17, 24, 39, 0.3);
+  --modal__button_hover: rgba(255, 255, 255, 0.8);
+  --zindex-five: 5;
+}
+
+/* Modal */
+
+.modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  visibility: hidden;
+
+  background: var(--modal-background);
+
+  z-index: var(--zindex-five);
+
+  overflow: auto;
+}
+
+.modal--show {
+  visibility: visible;
+}
+
+/* stop scrolling */
+.stop--scroll {
+  overflow: hidden;
+}
+
+/* Modal Article */
+
+.modal__article {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  margin: 2rem;
+  width: fit-content;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+}
+
+.modal__article__header {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+}
+
+.modal__close-btn {
+  display: inline-block;
+
+  width: fit-content;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.modal__article__header__text {
+  margin: 0;
+}
+
+.modal__article__info {
+  color: var(--secondary-color);
+
+  font-family: var(--primary-font);
+
+  text-align: justify;
+}
+
+.modal__article__footer {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.modal__article__footer .button__primary:hover {
+  background-color: var(--modal__button_hover);
+  color: var(--primary-color);
+}
+
+/* codeblock length fix */
+.modal__container .language-markup {
+  height: 10rem;
+  overflow-x: scroll;
+}
+
+@media screen and (min-width: 576px) {
+  .modal__container .language-markup {
+    height: 10rem;
+    overflow-x: hidden;
+  }
+}

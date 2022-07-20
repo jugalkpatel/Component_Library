@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("../resources/prism.css");
+@import url("./utils.css");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: Lato;
+  --success-alert-backcolor: #c6f4d5;
+  --success-alert-fontcolor: #3bb54a;
+  --error-alert-backcolor: #fdd7d7;
+  --error-alert-fontcolor: #d1403f;
+  --warning-alert-backcolor: #feebc8;
+  --warning-alert-fontcolor: #f0c419;
+  --info-alert-backcolor: #bee3f8;
+  --info-alert-fontcolor: #447eae;
+  --alert-font-size: 1.3rem;
+  --alert-icon-margin-right: 1rem;
+  --alert-padding: 1rem;
+}
+
+.alerts {
+  width: 100%;
+}
+
+.alerts--common {
+  display: flex;
+  align-items: center;
+  padding: var(--alert-padding);
+
+  font-size: var(--alert-font-size);
+  font-family: var(--primary-font);
+
+  border-radius: 0.5rem;
+}
+
+.alerts--margin--common {
+  margin-right: var(--alert-icon-margin-right);
+}
+
+.alerts__success {
+  background-color: var(--success-alert-backcolor);
+  color: var(--success-alert-fontcolor);
+}
+
+.alerts__error {
+  background-color: var(--error-alert-backcolor);
+  color: var(--error-alert-fontcolor);
+}
+
+.alerts__warning {
+  background-color: var(--warning-alert-backcolor);
+  color: var(--warning-alert-fontcolor);
+}
+
+.alerts__info {
+  background-color: var(--info-alert-backcolor);
+  color: var(--info-alert-fontcolor);
+}
+
+.alerts .language-markup {
+  height: 10rem;
+}
+
+@media screen and (max-width: 620px) {
+  .alerts--common {
+    margin: 0 1rem 0 1rem;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .alert--reduce-width {
+    width: 50%;
+  }
+}
