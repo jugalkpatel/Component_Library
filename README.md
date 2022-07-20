@@ -1,4 +1,4 @@
-# Component_Library
+# Component Library
 
 Component Library for personal projects built with html, css and vanilla-js.
 
